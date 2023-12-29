@@ -896,43 +896,41 @@ transition: all .3s ease-out;
 
 
 /*Hiệu ứng*/
-/* Animation cho phần tử Hero */
-.hero_content {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadein 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-}
-
-@keyframes fadein {
-  from {
+/*Hiệu ứng*/
+/* Định nghĩa keyframes */
+@keyframes jumpIn {
+  0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Animation cho phần tử About */
-.about_container {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadein 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+/* Áp dụng animation cho các phần tử */
+#hero,
+#about,
+#cnhan,
+#tes_sec {
+  animation: jumpIn 0.5s ease-out both;
 }
 
-/* Animation cho phần tử Chứng nhận của Nutvigor */
-.cnhan_container .certificate_image {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadein 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+/* Định dạng animation cho các phần tử trong swiper */
+.testimontial_item {
+  animation: jumpIn 0.5s ease-out both;
+  /* Thêm delay cho mỗi phần tử để tạo hiệu ứng nhảy vào tuần tự */
+  animation-delay: 0.3s;
 }
 
-/* Animation cho phần tử Khách hàng thân thiết của Nutvigor */
-.testimontial_container .testimontial_item {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadein 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+
+/* Animation cho icon mạng xã hội */
+.iconn {
+  transition: transform 0.2s ease-in-out;
+}
+.iconn:hover {
+  transform: scale(1.2);
 }
 
 
