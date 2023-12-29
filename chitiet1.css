@@ -444,7 +444,7 @@ color:rgb(234, 19, 19);
     margin-top: 20px;
 }
 #prodetails .single-pro-img{
-    width: 40%;
+    width: 50%;
     margin-right: 50px;
 }
 .small-img-group{
@@ -461,7 +461,8 @@ color:rgb(234, 19, 19);
 
 #prodetails .single-pro-details{
     width: 50%;
-    padding-top: 30px;
+    padding-top: 10px;
+    margin-left: 30px;
 }
 #prodetails .single-pro-details h3{
     font-size: 30px;
@@ -569,7 +570,7 @@ color:rgb(234, 19, 19);
     border-radius: 10px;
 }
 .add-cart:hover{
-    background-color: #7899e1;
+    background-color:#266C0B;
     color: #ffffff;
     border-radius: 10px;
 }
@@ -587,6 +588,15 @@ color:rgb(234, 19, 19);
     display: none;
  }
 
+.pro-sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-width: 0 35px 10px;
+    border-style: solid;
+    border-color: transparent rgb(242, 236, 73) transparent rgb(242, 236, 73);
+}
  
 /*mô tả sản phẩm*/
 .tab {
@@ -622,13 +632,13 @@ color:rgb(234, 19, 19);
     padding: 28px 0;
     margin-top: -10px;
     margin-left: auto;
-    background-color: #d0ecce;
+    background-color:#9ade7f;
   }
 .tab-contents {
     padding: 28px 0;
     margin-top: -10px;
     margin-left: auto;
-    background-color: #6ffbb0;
+    background-color: #9ade7f;
   }
 
 
@@ -644,33 +654,33 @@ color:rgb(234, 19, 19);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
- .tab-pane form {
+  form {
     margin-top: 20px;
   }
   
- .tab-pane .rating {
+  .rating {
     margin-bottom: 15px;
     font-size: 24px;
   }
   
-  .tab-pane .star {
+  .star {
     color: #ffd700;
     cursor: pointer;
   }
   
- .tab-pane textarea {
+  textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
   }
   
-  .tab-pane.btn-group {
+  .btn-group {
     display: flex;
     justify-content: space-between;
   }
   
- .tab-pane .btn {
+  .btn {
     padding: 10px 15px;
     cursor: pointer;
     border: none;
@@ -678,20 +688,20 @@ color:rgb(234, 19, 19);
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .tab-pane .submit {
+  .submit {
     background-color: #28a745;
     color: #fff;
   }
   
-.tab-pane  .submit:hover {
+  .submit:hover {
     background-color: #218838;
   }
   
- .tab-pane .cancel {
+  .cancel {
     background-color: #dc3545;
     color: #fff;
   }
   
-.tab-pane  .cancel:hover {
+  .cancel:hover {
     background-color: #c82333;
   }
