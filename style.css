@@ -86,16 +86,17 @@ body {
     border:#fff;
     border-radius: 20px;
 }
-.header .header-1 .search-form label{
+.header .header-1 .search-form button{
     font-size: 1.5rem;
     padding-right: 1.5rem;
+    background: none;
+    border: none;
     color:#302C2C;
     cursor: pointer;
 }
-.header .header-1 .search-form label:hover{
+.header .header-1 .search-form button:hover{
     color:#266C0B;
     border:#fff;
-}
 .header .header-1 .icons div,
 .header .header-1 .icons a{
     font-size: 1.5rem;
