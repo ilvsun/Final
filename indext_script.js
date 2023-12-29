@@ -107,3 +107,19 @@ var giohang = new Array();
           // Mô phỏng một sự kiện click trên nút đầu tiên để làm cho tab đầu tiên được chọn mặc định
             document.querySelector('.tablinks').click();
 
+
+
+/*----------------Thông báo khi khách hàng nhập email-----------------------*/
+function showAlert() {
+  // Lấy giá trị của input
+  var email = document.getElementById("emailinput").value;
+
+  // Kiểm tra xem ô nhập liệu có rỗng hay không
+  if (email.trim() === "") {
+    alert("Vui lòng nhập email của bạn!");
+  } else {
+    alert("Email của bạn là: " + email + ". Hãy đợi thông báo từ Nutvigor nhé!");
+  }
+}
+/*----------------Thông báo khi khách hàng nhập email-----------------------*/
+
