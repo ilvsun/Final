@@ -455,6 +455,9 @@ color:rgb(234, 19, 19);
     flex-basis: 24%;
     cursor: pointer;
 }
+.small-img-col:hover{
+    transform: scale(1.2);
+}
 
 #prodetails .single-pro-details{
     width: 50%;
@@ -575,15 +578,25 @@ color:rgb(234, 19, 19);
     height: 20px;
     margin-right: 10px;
 }
+#cartAnimation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+ }
+
+ 
 /*mô tả sản phẩm*/
-.tabs {
+.tab {
     display: flex;
     position: relative;
     margin-top: 30px;
     margin-left: 40px;
   
 }
-.tab-item {
+.tab button {
     min-width: 80px;
     padding: 16px 20px 11px 20px;
     font-size: 15px;
@@ -597,12 +610,12 @@ color:rgb(234, 19, 19);
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.tab-item:hover {
+.tab button:hover {
     opacity: 1;
     background-color: #28a745;
     border-color: #266C0B;
 }
-.tab-item.active {
+.tab button.active {
     opacity: 1;
 }
 .tab-content {
@@ -611,6 +624,15 @@ color:rgb(234, 19, 19);
     margin-left: auto;
     background-color: #d0ecce;
   }
+.tab-contents {
+    padding: 28px 0;
+    margin-top: -10px;
+    margin-left: auto;
+    background-color: #6ffbb0;
+  }
+
+
+
 
 
 /*đánh giá sản phẩm*/

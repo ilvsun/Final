@@ -76,25 +76,37 @@ allStar.forEach((item, idx)=> {
 });
 
 //chuyen tab
-function changeTab(tabId) {
-    // Tìm tất cả các tab và tab-pane
-    const tabs = document.querySelectorAll('.tab-item');
-    const tabPanes = document.querySelectorAll('.tab-pane');
- 
-    // Loại bỏ trạng thái active từ tất cả các tab và tab-pane
-    tabs.forEach(tab => tab.classList.remove('active'));
-    tabPanes.forEach(pane => pane.classList.remove('active'));
- 
-    // Tìm tab và tab-pane tương ứng và thêm trạng thái active
-    const selectedTab = document.querySelector(`.${tabId}`);
-    const selectedPane = document.getElementById(tabId);
-    
-    if (selectedTab && selectedPane) {
-       selectedTab.classList.add('active');
-       selectedPane.classList.add('active');
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
     }
-    if (tabId === 'tab1') {
-        document.getElementById('moTaContent').style.display = 'block';
-     }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+
+  
+  function addToCart() {
+    // Hiển thị hiệu ứng thêm vào giỏ hàng
+    document.getElementById("cartAnimation").style.display = "block";
+ 
+    // Ẩn hiệu ứng sau 1 giây (có thể điều chỉnh thời gian theo nhu cầu)
+    setTimeout(function () {
+       document.getElementById("cartAnimation").style.display = "none";
+    }, 1000);
  }
+ 
  
