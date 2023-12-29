@@ -55,8 +55,8 @@
     <div class="header-2">
         <ul id="navbar">
             <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="#">Về chúng tôi</a></li>
-            <li><a href="#">Sản phẩm</a>
+            <li><a href="aboutus.html">Về chúng tôi</a></li>
+            <li><a href="product.html">Sản phẩm</a>
                 <ul class="dropdownnav">
                     <li><a href="#">Hạt dinh dưỡng</a></li>
                     <li><a href="#">Granola - Hạt mix</a></li>
@@ -65,8 +65,8 @@
                     <li><a href="#">Sữa hạt dinh dưỡng</a></li>
                 </ul>
             </li>
-            <li><a href="">Tin tức</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="blog.html">Tin tức</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
             <li><a href="#">Khuyến mãi</a></li>
     </div>
 </header>
@@ -143,7 +143,7 @@
                             </div>
                             <div class="price flex1">
                                 <p><span>250.000</span><label>500.000</label></p>
-                                <i class="fa-solid fa-cart-shopping"></i></i>
+                                <i onclick="themvaogiohangg(this)" class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -166,8 +166,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>150.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span> <label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -190,8 +190,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>250.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span><label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -214,8 +214,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>250.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span><label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -238,8 +238,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>250.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span><label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -262,8 +262,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>250.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span><label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -286,8 +286,8 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>250.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span><label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
@@ -310,14 +310,27 @@
                                 <i class="far fa-star"></i>
                             </div>
                             <div class="price flex1">
-                                <p>250.000 <label>300.000</label></p>
-                                <i class="fas fa-plus"></i>
+                                <p><span>250.000</span><label>300.000</label></p>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
     </section>
+    <script>
+        function themvaogiohangg(x) {
+          // Truy cập phần tử item
+          var item = x.closest('.item');
+          var imgElement = item.querySelector('.img img');
+          var imgSrc = imgElement.src;
+          // Lấy giá từ phần tử span trong phần tử price
+          var gia = x.parentNode.querySelector('.price span').innerText;
+          var tenSanPham = x.parentNode.querySelector('.text h5').innerText;
+          alert("Tên sản phẩm là: " + tenSanPham);
+        }
+    </script>
+    
     <!--Flash_Deals End-->
 
     <!--Tabs SP mới và SP bán chạy-->
@@ -351,7 +364,6 @@
                             </div>
                             <h4><span>250.000</span>đ</h4>
                         </div>
-                       <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
                        <button onclick="themvaogiohang(this)">
                         <i class="fal fa-shopping-cart cart"></i>
                     </button>
@@ -692,7 +704,6 @@
         <div id="backtop">
             <i class="fa-solid fa-circle-chevron-up"></i>
         </div>
-
     <!--Nút quay lại đầu trang-->
 
     <!--Footer-->
@@ -716,11 +727,11 @@
         </div>
         <div class="col">
             <h4>Thông tin chung</h4>
-            <a href="#">Trang chủ</a>
-            <a href="#">Về chúng tôi</a>
-            <a href="#">Sản phẩm</a>
-            <a href="#">Tin Tức</a>
-            <a href="#">Liên hệ</a>
+            <a href="index.html">Trang chủ</a>
+            <a href="aboutus.html">Về chúng tôi</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="blog.html">Tin Tức</a>
+            <a href="lienhe.html">Liên hệ</a>
             <a href="#">Khuyến mãi</a>
         </div>
         <div class="col">
