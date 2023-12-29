@@ -323,10 +323,12 @@
     <!--Tabs SP mới và SP bán chạy-->
     <section class="section-p1">
         <!-- Tab links -->
+        <div class="containertab mtop">
         <div class="tab">
             <p class="tabtitle">Danh mục bạn quan tâm</p>
             <button class="tablinks" onclick="opentab(event, 'Sanphammoi')">NEW</button>
             <button class="tablinks" onclick="opentab(event, 'Sanphamhot')">HOT</button>
+        </div>
         </div>
         
         <!-- Tab content -->
@@ -334,7 +336,7 @@
             <section id="product1" class="section-p1">
                 <h2>Sản Phẩm Mới</h2>
                 <p><strong>Sức khỏe hạt dinh dưỡng, hạnh phúc từ thiên nhiên</strong></p>
-                <div class="pro-container scroll">
+                <div class="container mtop">
                     <div class="pro">
                         <img src="images/Ngũ cốc/4.jpg" alt="">
                         <div class="des">
@@ -469,16 +471,14 @@
                         <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                     </div>
                 </div>
-                <i class="fa-solid fa-circle-chevron-left"></i>
-                <i class="fa-solid fa-circle-chevron-right"></i>
             </section>
         </div>
-        
+        <!--Sản phẩm hot-->
         <div id="Sanphamhot" class="tabcontent">
             <section id="product1" class="section-p1">
                 <h2>Sản Phẩm Hot</h2>
                 <p><strong>Lựa chọn cho sức khỏe của mọi nhà</strong></p>
-                <div class="pro-container scroll">
+                <div class="container mtop">
                     <div class="pro">
                         <img src="images/Sữa hạt dinh dưỡng/5.png" alt="">
                         <div class="des">
@@ -608,15 +608,13 @@
                         <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                     </div>
                 </div>
-                <i class="fa-solid fa-circle-chevron-left"></i>
-                <i class="fa-solid fa-circle-chevron-right"></i>
             </section>
         </div>
     </section>
     <!--Khuyến mãi hot-->
     <!--Tin tức-->
     <section>
-        <div class="blogcontainer">
+        <div class="blogcontainer mtop">
             <div class="blog-section">
                 <div class="blogtitle">
                     <h2>Tin Tức</h2>
@@ -676,18 +674,19 @@
 
     <!--text banner-->
 
-    <!--Nhập email-->
-    <section id="newsletter" class="section-p1" class="section-m1">
-        <div class="newstext">
-            <h4>
-                NHẬN THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI
-            </h4>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Nhập email của bạn">
-            <button class="normal">Gửi</button>
-        </div>
+    <!--Nhập email nhận khuyến mãi Start-->
+    <section class="newsletter">
+        <div class="container mtop">
+            <i class="far fa-paper-plane"></i>
+            <h2>NHẬN THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h2>
+
+            <div class="input flex1">
+                <input type="text" id="emailinput" placeholder="Nhập email của bạn">
+                <button onclick="showAlert()">Gửi</button>
+            </div>
+        </div>  
     </section>
+    <!--Nhập email nhận khuyến mãi End-->
 
     <!--Footer-->
 <section>
