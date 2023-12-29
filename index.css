@@ -1,0 +1,587 @@
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/*--------------Banner swiper---------------*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*--------------Banner swiper---------------*/
+
+
+/*--------------Features (Dịch vụ nổi bật)---------------*/
+.features-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.features-column{
+    padding: 1em;
+}
+.features-card{
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 0 0.62em;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+.features-card .features-icon{
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: #266C0B;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.features-icon::before{
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #6AC943;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.features-card h6{
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #302C2C;
+    font-family: "Montserrat", sans-serif;
+}
+.features-card:hover{
+    background-position: 0;
+}
+.features-card:hover .features-icon:before{
+    height: 2.25em;
+    width: 2.25em;
+}
+/*--------------Features (Dịch vụ nổi bật)---------------*/
+
+#product1 {
+    text-align: center;
+    border: 1px solid #FFFAF0;
+    padding: 20px;
+    background: #FFFAF0;
+    border-radius: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+    background: #ffffff;
+}
+
+#product1 .pro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #302C2C;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #302C2C;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+#product1 .pro .des h5:hover {
+    color: #266C0B; 
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: #0e0d0d;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #266C0B;
+}
+
+#product1 .pro .star i {
+    color: #eeee13;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #6AC943;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: #6AC943;
+    transition: color 0.3s ease;
+}
+
+#product1 .pro .cart:hover {
+    color: #266C0B; 
+}
+
+.section-p1 .fa-circle-chevron-left {
+    font-size: 30px;
+    color: #6AC943;
+    margin-top: -20px;
+    margin-left: 30px;
+    float: left;
+    transition: color 0.3s ease;
+}
+
+.section-p1 .fa-circle-chevron-right {
+    font-size: 30px;
+    color: #6AC943;
+    margin-top: -20px;
+    margin-right: 30px;
+    float: right;
+    transition: color 0.3s ease;
+}
+
+.blogcontainer{
+    width: 100%;
+    background-color: #FFFAF0;
+}
+
+.blog-section{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.blog-section .blogtitle{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .blogtitle h2{
+    font-size: 40px;
+    color: #6AC943;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.blog-section .blogtitle p{
+    font-size: 18px;
+    color: #302C2C;
+    font-family: "Montserrat", sans-serif;
+    margin: 15px 0 20px 0;
+}
+
+.blogcards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 25px auto;
+
+}
+
+.blogcards .blogcard{
+    width: 100%;
+    position: relative;
+}
+
+.blogimage img{
+    width: 100%;
+    height: auto;
+}
+
+.blogcontent{
+    padding: 15px 20px;
+}
+
+.blogcontent h4{
+    font-size: 24px;
+    color: #302C2C;
+    font-weight: 500;
+}
+
+.blogcontent p{
+    color: #656565;
+    font-size: 15px;
+}
+
+.blogcontent a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 12px;
+    display: inline-block;
+    background-color: #266C0B;
+    padding: 8px 15px;
+}
+
+.blogcard .blogposted-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #6AC943;
+    padding: 6px 15px;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #266C0B;
+    
+}
+
+#newsletter h4{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#newsletter button{
+    width: 60px;
+    border-radius: 4px;
+    background-color: #333;
+    border: #333;
+    color: #fff;
+    white-space: nowrap;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+#newsletter button:hover{
+    background-color: #6AC943;
+    border: #6AC943;
+}
+
+@media screen and (max-width: 992px) {
+    .blogcards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-section{
+        padding: 1em;
+    }
+    .features-card{
+        padding: 5em 2em;
+    }
+    .features-column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    .blogcards{
+        grid-template-columns: 1fr;
+    }
+    .features-section{
+        padding: 1em 7em;
+    }
+    
+    #newsletter .form{
+
+        width: 70%;
+    }
+}
+/*----------------flash_deals--------------*/
+.container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+.flex {
+    display: flex;
+  }
+  
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mtop {
+    margin-top: 50px;
+  }
+
+  .heading{
+    padding: 20px 0 0 0;
+    margin-bottom: 30px;
+  }
+
+  .heading h2{
+    font-size: 46px;
+    color: #6ac943;
+    line-height: 54px;
+  }
+  .heading h2 i{
+    font-size: 40px;
+    line-height: 54px;
+    color: #6AC943;
+    margin-right: 10px;
+  }
+  
+  .heading a{
+    font-size: 30px;
+    line-height: 54px;
+    color: #266C0B;
+    margin-right: 10px;
+  }
+
+  .heading a i {
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+  .flash_deals .item{
+    padding: 20px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+    background: #ffffff;
+  }
+
+  .flash_deals .item:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  .owl-carousel .owl-item img {
+    border-radius: 20px;
+  }
+
+  .flash_deals .img span{
+    background: #266C0B;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .flash_deals .star{
+    flex-direction: row;
+
+  }
+
+  .flash_deals .view{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    font-size: 20px;
+  }
+
+  .flash_deals .item:hover .view{
+    opacity: 1;
+    color: #266C0B;
+  }
+
+  .flash_deals .star i{
+    padding-top: 7px;
+    color: #f7d833;
+    margin: 5px 5px 5px 0;
+  }
+
+  .flash_deals h5 {
+    padding-top: 7px;
+    color: #302C2C;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.flash_deals h5:hover {
+    color: #266C0B; 
+}
+
+  .flash_deals p span{
+    color: #266C0B;
+  }
+
+  .flash_deals p label{
+    text-decoration: line-through;
+    color: #302C2C;
+    margin-left: 10px;
+  }
+
+  .flash_deals .price i{
+    font-size: 20px;
+    color: #6AC943;
+  }
+
+  .flash_deals .price i:hover{
+    color: #266C0B;
+  }
+  
+  .owl-nav i{
+    font-size: 20px;
+    transition: 005s;
+    width: 50px;
+    height: 50px;
+    background: #e2eff7;
+    border-radius: 50%;
+    color: white;
+    line-height: 50px;
+  }
+
+  .owl-nav i:hover{
+    background: #266C0B;
+    color: #fff;
+  }
+  .owl-next i,
+  .owl-prev i{
+    position: absolute;
+    top: 40%;
+  }
+
+  .owl-next i{
+    right: -20px;
+    background: #6AC943;
+  }
+
+  .owl-prev i{
+    left: -20px;
+  }
+/*----------------flash_deals--------------*/
+
+/*----------------SP mới và SP bán chạy--------------*/
+.tabsp{
+    width: 65%;
+    margin: 6.5rem auto;
+}
+
+.tabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.tabs li{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6AC943;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs li ::after{
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -3%;
+    width: 0%;
+    height: 5px;
+    background: #263238;
+}
+.tabs li .actvie::after{
+    width: 100%;
+}
+
+
+
+/*----------------SP mới và SP bán chạy--------------*/
