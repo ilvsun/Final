@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    transition: width none;
+    transition: none;
     text-decoration: none;
 }
 
@@ -171,11 +171,12 @@ ul li{
     width: 220px;
     display: none; /* Ẩn dropdown mặc định */
     position: absolute; /* Vị trí tuyệt đối */
-    top: 210%; /* Hiển thị dropdown từ phía dưới của mục cha */
+    top: 100%; /* Hiển thị dropdown từ phía dưới của mục cha */
     left: 0;
     background-color: #fff; /* Màu nền dropdown */
     min-width: 120px; 
     line-height: 3rem;
+    z-index: 1000
 
 }
 
@@ -188,80 +189,80 @@ ul li{
 
 #navbar ul li:hover ul.dropdownnav{
     display: block;
-    
 }
 
 #mobile{
     display: none;
 }
 
-/*Contact Page*/
-#contact-details{
+/*Blog*/
+#blog{
+    padding: 100px 150px 0 150px;
+}
+#blog .blog-box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 100px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
 }
-
-#contact-details .details{
-    width: 40%;
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
 }
-#contact-details .details span,
-#form-details form span{
-    font-size: 12px;
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
-#contact-details .details h2,
-.form-details form h2{
-    font-size: 20px;
-    line-height: 35px;
-    padding: 10px 0;
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 15px ;
+    color: #000;
+    font-weight: 700;
+}
+#blog .blog-details a:hover{
     color: #6AC943;
 }
-
-#contact-details .details li{
-    list-style: none;
-    display: flex;
-    padding: 5px 0;
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 60px;
+    font-weight: 700;
+    color: #acc8a1;
+    z-index: -9;
 }
-#contact-details .details li i{
-    font-size: 14px;
-    padding-right: 22px;
+/*pagination*/
+#pagination{
+    text-align: center;
 }
-#contact-details .details li p{
-    margin: 0;
-    font-size: 14px;
-}
-#contact-details .map{
-    width: 55%;
-    height: 400px;
-}
-#contact-details .map iframe{
-    width: 100%;
-    height: 100%;
-}
-#contact-details form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#contact-details form button{
+#pagination a{
+    text-decoration: none;
     background-color: #266C0B;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 10px 10px;
-    border-bottom: 40%;
-    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color:#fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
-#contact-details form input,
-#contact-details form textarea{
-    width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 5px;
-    border: 1px solid #e1e1e1;
+#pagination a:hover {
+    background-color: #103310; 
 }
 
+#pagination a.active {
+    background-color: #103310; 
+}
+
+
+
+
+
+
+    
 /*Footer*/
 footer{
     display: flex;
@@ -362,6 +363,7 @@ color:rgb(223, 19, 36);
 color:rgb(234, 19, 19);
 }
 
+/*responesive*/
 @media (max-width:799px){
     #navbar{
         display: flex;
@@ -442,19 +444,10 @@ color:rgb(234, 19, 19);
     footer .col a{
         display: none;
     }
-    .section-p1{
-        padding: 40px 40px;
-    }
-    #contact-details{
-        flex-direction: column;
-    }
-    #contact-details .details,
-    #contact-details form{
-        width: 100%;
-    }
-    #contact-details .map{
-        width: 100%;
-    }
+    #pagination a {
+        padding: 10px 15px; /* Điều chỉnh padding cho các nút */
+      }
+      
 
 }
 @media (max-width: 450px){
@@ -464,56 +457,42 @@ color:rgb(234, 19, 19);
     #mobile{
         display: inline-block;
     }
+    
+}
+@media (max-width: 768px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details{
+        width: 100%;
+    }
+      
+    
+      
+}
+@media (max-width: 477px) {
     .section-p1{
         padding: 20px ;
     }
-    #contact-details{
+    #blog .blog-box{
         flex-direction: column;
+        align-items: flex-start;
     }
-    #contact-details .details,
-    #contact-details form{
-        width: 100%;
-    }
-    #contact-details .map{
-        width: 100%;
-    }
-    
+      
 }
-
-
-/*
-#form-details{
-    margin: 30px;
-    padding: 10px;
-    
-}
-#form-details form{
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#form-details form input,
-#form-details form textarea{
-    width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border: 1px solid #e1e1e1;
-}
-#form-details form button{
-    background-color: #088178;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 15px 15px;
-    border-bottom: 50%;
-    font-size: 14px;
-    margin: 10px;
-}
-*/
-
-    
 
 
 
