@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header và Navigation -->
     <header class="header">
         <div class="header-1">
             <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-            <form action="" class="search-form">
-                <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
-                &emsp; <label for="search-box" class="fas fa-search"></label>
+            <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+                <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+                &emsp; <button type="submit"><i class="fas fa-search"></i></button>
             </form>
     
             <div class="icons">
@@ -175,5 +174,6 @@
     <!-- Liên kết với thư viện jQuery và file JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="checkout.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
