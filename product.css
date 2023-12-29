@@ -176,6 +176,7 @@ ul li{
     background-color: #fff; /* Màu nền dropdown */
     min-width: 120px; 
     line-height: 3rem;
+    z-index: 1000;
 
 }
 
@@ -188,87 +189,174 @@ ul li{
 
 #navbar ul li:hover ul.dropdownnav{
     display: block;
-    
 }
 
 #mobile{
     display: none;
 }
-
-/*Contact Page*/
-#contact-details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 100px;
-}
-
-#contact-details .details{
-    width: 40%;
-}
-#contact-details .details span,
-#form-details form span{
-    font-size: 12px;
-}
-#contact-details .details h2,
-.form-details form h2{
-    font-size: 20px;
-    line-height: 35px;
-    padding: 10px 0;
-    color: #6AC943;
-}
-
-#contact-details .details li{
-    list-style: none;
-    display: flex;
-    padding: 5px 0;
-}
-#contact-details .details li i{
-    font-size: 14px;
-    padding-right: 22px;
-}
-#contact-details .details li p{
-    margin: 0;
-    font-size: 14px;
-}
-#contact-details .map{
-    width: 55%;
-    height: 400px;
-}
-#contact-details .map iframe{
+#page-header{
+    background-image: url(images/banner/bannerg.jpg);
     width: 100%;
-    height: 100%;
-}
-#contact-details form{
+    height: 30vh;
+    background-size: cover;
     display: flex;
+    justify-content:end;
     flex-direction: column;
-    align-items: flex-start;
+    padding: 14px;
+    text-align: center;
 }
-#contact-details form button{
-    background-color: #266C0B;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 10px 10px;
-    border-bottom: 40%;
+#page-header p{
+    font-size: 20px;
+    color: #3c881d;
+    font-weight: 700;
+
+}
+#page-header h2{
+    color: #3c881d;
+}
+
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+
+/*product*/
+ 
+#product1{
+    text-align: center;
+    display: flex;
+}
+.pro-filter{
+    flex-basis: 20%;
+    margin-top: 35px;
+    text-align: left;
+
+}
+.pro-filter #filter{
+    padding-top: 20px;
+}
+.pro-filter h5{
+    padding-bottom: 10px;
     font-size: 15px;
 }
-#contact-details form input,
-#contact-details form textarea{
-    width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 5px;
-    border: 1px solid #e1e1e1;
+.pro-filter label {
+    display: block;
+    margin-bottom: 10px;
+}
+.pro-filter .price-filter button{
+    background-color:#6AC943;
+    border:#266C0B;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+}
+.pro-container{
+    flex-basis: 80%;
+}
+#product1 a{
+    text-decoration: none;
 }
 
+#product1 .pro-container{
+    display:flex;
+    justify-content:left;
+    padding-top: 20px;
+    flex-wrap:wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 150px;
+    padding: 10px 12px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 17px 0 0;
+    position: relative;
+}
+#product1 .pro img{
+    width: 90%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+#product1 .pro:hover img {
+    transform: scale(1.1);
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+    
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+}
+#product1 .pro .des .star i{
+    color: #eeee13;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #6AC943;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: #6AC943;
+    transition: color 0.3s ease;
+}
+#product1 .pro .cart:hover {
+    color: #266C0B; 
+}
+
+/*pagination*/
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #266C0B;
+    padding: 15px 20px;
+    color:#fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 30px; /* Điều chỉnh kích thước theo ý muốn */
+    height: 30px; /* Điều chỉnh kích thước theo ý muốn */
+    line-height: 30px; /* Điều chỉnh kích thước theo ý muốn */
+    border-radius: 50%;
+}
+#pagination a:hover {
+    background-color: #103310; 
+}
+
+#pagination a.active {
+    background-color: #103310; 
+}
+
+
+
+    
 /*Footer*/
 footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px;
-    background-color: #f4f4f4;
 }    
 footer .col{
     display: flex;
@@ -362,6 +450,9 @@ color:rgb(223, 19, 36);
 color:rgb(234, 19, 19);
 }
 
+/*responesive*/
+
+
 @media (max-width:799px){
     #navbar{
         display: flex;
@@ -442,19 +533,16 @@ color:rgb(234, 19, 19);
     footer .col a{
         display: none;
     }
-    .section-p1{
-        padding: 40px 40px;
+    #product1 {
+        width: 100%; /* Chiều rộng của phần product là 100% */
     }
-    #contact-details{
-        flex-direction: column;
+    #page-header{
+        height: 40vh;
     }
-    #contact-details .details,
-    #contact-details form{
-        width: 100%;
-    }
-    #contact-details .map{
-        width: 100%;
-    }
+    #pagination a {
+        padding: 10px 15px; /* Điều chỉnh padding cho các nút */
+      }
+      
 
 }
 @media (max-width: 450px){
@@ -464,56 +552,27 @@ color:rgb(234, 19, 19);
     #mobile{
         display: inline-block;
     }
-    .section-p1{
-        padding: 20px ;
-    }
-    #contact-details{
-        flex-direction: column;
-    }
-    #contact-details .details,
-    #contact-details form{
-        width: 100%;
-    }
-    #contact-details .map{
-        width: 100%;
-    }
     
 }
 
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+}
 
-/*
-#form-details{
-    margin: 30px;
-    padding: 10px;
-    
-}
-#form-details form{
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#form-details form input,
-#form-details form textarea{
+/* CSS cho nền mờ xung quanh popup */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border: 1px solid #e1e1e1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
-#form-details form button{
-    background-color: #088178;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 15px 15px;
-    border-bottom: 50%;
-    font-size: 14px;
-    margin: 10px;
-}
-*/
-
-    
-
-
-

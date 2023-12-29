@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width. initial-scale=1.0">
-    <title>Liên hệ</title>
+    <title>Blog</title>
     <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="lienhe.css">
-    <img src="images/logo/3.png ấy" alt="">
+    <link rel="stylesheet" href="blog.css">
 </head>
 <body>
 <!--header, navbar menu-->
@@ -48,45 +47,50 @@
     </div>
 </section>
 
-<section id="contact-details" class="section-p1">
-    <div class="details">
-        <H2>NUTVIGOR</H2>
-        <div>
-            <li>
-                <i class="fas fa-map"></i>
-                <p>6 phố Phạm Ngọc Thạch, Đống Đa, Hà Nội</p>
-            </li>
-            <li>
-                <i class="fas fa-envelope"></i>
-                <p>nutvigorvn@gmail.com</p>
-            </li>
-            <li>
-                <i class="fas fa-phone"></i>
-                <p>19006767</p>
-            </li>
-            <li>
-                <i class="fas fa-clock"></i>
-                <p>Thứ 2 đến Chủ Nhật, từ 9:00 đến 22:00</p>
-            </li>
+<section id="blog">
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/Blog/11.jpg" alt="">
         </div>
-        <div class="">
-            <h2>LIÊN HỆ VỚI CHÚNG TÔI !!!</h2>
-            <form action="">
-                <input type="text" placeholder="Họ và tên">
-                <input type="text" id="email" placeholder="E-mail *"required  >
-                <input type="text" id="phone" placeholder="Điện thoại *"required >
-                <textarea name="" id="" cols="20" rows="5" placeholder="Nội dung"></textarea>
-                <button onclick="validateForm()">Submit</button>
-            </form>
+        <div class="blog-details">
+            <h4>Ngũ cốc trẻ em NUTVIGOR - Bí quyết dinh dưỡng cho sự phát triển toàn diện của trẻ em</h4>
+            <p>Ngày nay, việc chăm sóc dinh dưỡng cho trẻ em ngày càng trở thành mối quan tâm hàng đầu...</p>
+            <a href="#">Xem thêm...</a>
         </div>
+        <h1>25/11</h1>
+    </div>
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/Blog/10.jpg" alt="">
+        </div>
+        <div class="blog-details">
+            <h4>Có thể bạn không biết điều này khi chế biến sữa hạt!!!</h4>
+            <p>Sữa hạt đã trở thành một trào lưu ẩm thực ngày nay, đặc biệt là trong thế giới đồ uống. Từ trân...</p>
+            <a href="#">Xem thêm...</a>
+        </div>
+        <h1>25/12</h1>
+    </div>
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="images/Blog/9.jpg" alt="">
+        </div>
+        <div class="blog-details">
+            <h4>Lợi ích khi sử dụng ngũ cốc</h4>
+            <p>Ngày nay, việc chăm sóc dinh dưỡng cho trẻ em ngày càng trở thành mối quan tâm hàng đầu...</p>
+            <a href="#">Xem thêm...</a>
+        </div>
+        <h1>2/12</h1>
     </div>
 
-
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5422734701897!2d105.83665190000002!3d21.0109776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab871757b525%3A0x743e774e18d4b45b!2zNi82IFAuUGjhuqFtIE5n4buNYyBUaOG6oWNoLCBU4buVIETDom4gUGjhu5EgU-G7kSAyN2ErVOG7lSBEw6JuIFBo4buRIFPhu5EgNTAsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1702980479990!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
 </section>
 
+<section id="pagination" class="section-p1">
+    <a href="#"><<</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">>></a>
+</section>
 
 <!--Footer-->
 <section>
@@ -157,25 +161,4 @@
     </div>
     
     <script src="header.js"></script>
-</body>
 </html>
-<script>
-    function validateForm() {
-        var email = document.getElementById('email').value;
-        var phone = document.getElementById('phone').value;
-
-        // Kiểm tra định dạng email
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert('Vui lòng nhập một địa chỉ email hợp lệ.');
-            return;
-        }
-
-        // Kiểm tra định dạng số điện thoại (chỉ chấp nhận số và dấu +)
-        var phoneRegex = /^[0-9+]+$/;
-            if (!phoneRegex.test(phone) || phone.length !== 10) {
-                alert('Vui lòng nhập một số điện thoại hợp lệ (10 chữ số).');
-                return;
-        }
-    }
-</script>
