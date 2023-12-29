@@ -171,11 +171,12 @@ ul li{
     width: 220px;
     display: none; /* Ẩn dropdown mặc định */
     position: absolute; /* Vị trí tuyệt đối */
-    top: 210%; /* Hiển thị dropdown từ phía dưới của mục cha */
+    top: 100%; /* Hiển thị dropdown từ phía dưới của mục cha */
     left: 0;
     background-color: #fff; /* Màu nền dropdown */
     min-width: 120px; 
     line-height: 3rem;
+    z-index: 1000;
 
 }
 
@@ -297,6 +298,8 @@ color:rgb(234, 19, 19);
 #navbar{
     z-index: 2;
 }
+
+
 
 @media (max-width:799px){
     #navbar{
