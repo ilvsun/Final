@@ -125,19 +125,13 @@ body {
     background: #ffffff;
 }
 
-#product1 .pro-container {
+#product1 .container {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: space-around;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    overflow-x: auto;
-}
-
-.scroll::-webkit-scrollbar {
-    width: 0.5em;
 }
 
 #product1 .pro:hover {
@@ -303,54 +297,6 @@ body {
     padding: 6px 15px;
 }
 
-#newsletter{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: 20% 30%;
-    background-color: #266C0B;
-    
-}
-
-#newsletter h4{
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-}
-
-#newsletter .form{
-    display: flex;
-    width: 40%;
-}
-
-#newsletter input{
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    font-family: "Montserrat", sans-serif;
-}
-
-#newsletter button{
-    width: 60px;
-    border-radius: 4px;
-    background-color: #333;
-    border: #333;
-    color: #fff;
-    white-space: nowrap;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-}
-
-#newsletter button:hover{
-    background-color: #6AC943;
-    border: #6AC943;
-}
-
 @media screen and (max-width: 992px) {
     .blogcards{
         grid-template-columns: repeat(2, 1fr);
@@ -370,8 +316,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .section-p1{
-        padding: 40px 40px;
+    #product1 .container{
+        justify-content: space-between;
+    }
+
+    #product1 .pro{
+        margin: 15px;
     }
     .blogcards{
         grid-template-columns: 1fr;
@@ -381,9 +331,15 @@ body {
     }
     
     #newsletter .form{
-
         width: 70%;
     }
+}
+
+@media screen and (max-width: 477px){
+    #product1 .pro{
+        width: 100%
+    }
+
 }
 /*----------------flash_deals--------------*/
 .container {
@@ -547,15 +503,17 @@ body {
   }
 /*----------------flash_deals--------------*/
 
-/*----------------SP mới và SP bán chạy--------------*/
-/* Style the tab */
+/*----------------Tabs SP mới và SP hot--------------*/
+.containertab{
+    background-color: #FFFAF0;
+}
 .tab {
     overflow: hidden;
-    background-color: #FFFAF0;
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    
+    margin: 0 65px;
+
   }
 
   .tabtitle {
@@ -563,14 +521,12 @@ body {
     font-weight: 600;
     color: #6AC943;
     margin-bottom: 3rem;
-    margin-right: auto; /* Đẩy tabtitle về bên trái của dòng */
+    margin-right: auto;
     margin-top: 10px;
-    margin-left: 70px;
 
 
   }
   
-  /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
     float: right;
@@ -602,15 +558,64 @@ body {
   .tab button.active {
     background-color: #266C0B;
   }
-  
-  /* Style the tab content 
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }*/
+/*----------------Tabs SP mới và SP hot--------------*/
+
+/*----------------Nhập email nhận khuyến mãi--------------*/
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.newsletter{
+    text-align: center;
+    background-color: #266C0B;
+}
+
+.newsletter .container{
+    max-width: 50%;
+    margin: auto;
+}
+
+.newsletter i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.newsletter h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.input {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .input input {
+    width: 100%; /* Chiều rộng 100% để lấp đầy không gian còn lại trong .input */
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+/*----------------Nhập email nhận khuyến mãi--------------*/
 
 
 
-/*----------------SP mới và SP bán chạy--------------*/
+
+
