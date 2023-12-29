@@ -7,16 +7,16 @@
     <title>Blog</title>
     <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!--header, navbar menu-->
 <section class="header">
     <div class="header-1">
         <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
-            &emsp; <label for="search-box" class="fas fa-search"></label>
+        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
         </form>
 
         <div class="icons">
@@ -161,4 +161,5 @@
     </div>
     
     <script src="header.js"></script>
+    <script src="search.js"></script>
 </html>
