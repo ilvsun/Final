@@ -68,14 +68,31 @@ pwShowHide.forEach(eyeIcon => {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const searchForm = document.getElementById("searchForm");
+// Lấy tham chiếu đến form và các trường input
+const loginForm = document.getElementById('flogin');
+const emailInput = document.querySelector('.input');
+const passwordInput = document.querySelector('.password');
 
-  searchForm.addEventListener("submit", function(event) {
-      event.preventDefault(); // Ngăn chặn hành động mặc định của form
+// Xử lý sự kiện khi form được gửi đi
+loginForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Ngăn chặn hành động mặc định của form
 
-      const searchTerm = document.getElementById("search-box").value;
-      // Xử lý tìm kiếm tại đây, ví dụ: chuyển hướng đến trang kết quả tìm kiếm
-      window.location.href = "search.html?query=" + encodeURIComponent(searchTerm);
-  });
+// Lấy giá trị từ các trường input
+  const emailValue = emailInput.value.trim();
+  const passwordValue = passwordInput.value;
+
+// Kiểm tra tính hợp lệ của email và mật khẩu
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailValue === '' || passwordValue === '') {
+    alert('Vui lòng điền đủ thông tin đăng nhập trước khi gửi.');
+    return;
+  } else if (!emailPattern.test(emailValue)) {
+    alert('Email không hợp lệ. Vui lòng nhập địa chỉ email đúng.');
+    return;
+  } else {
+    // Gửi thông tin đăng nhập đến server hoặc xử lý theo nhu cầu của bạn
+    alert('Thông tin đăng nhập đã chính xác');
+    window.location.href = 'index.html'; // Chuyển hướng người dùng đến trang chủ
+  }
 });
+
