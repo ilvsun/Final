@@ -36,4 +36,13 @@ mobile.addEventListener('click', () => {
     }
 });
 
+// Truy cập  trang đăng nhập
+document.addEventListener("DOMContentLoaded", function() {
+    const loginBtn = document.getElementById("login-btn");
+    // Thêm sự kiện click cho icon
+    loginBtn.addEventListener("click", function() {
+        // Chuyển hướng sang trang login.html khi icon được nhấp
+        window.location.href = "login.html";
+    });
+});
 
