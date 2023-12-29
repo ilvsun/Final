@@ -78,12 +78,7 @@ var giohang = new Array();
         function showcountsp() {
             document.getElementById("countsp").innerHTML = giohang.length;
         }
-
-
-
-
-
-        function opentab(evt, cityName) {
+function opentab(evt, cityName) {
             // Declare all variables
             var i, tabcontent, tablinks;
           
@@ -122,4 +117,20 @@ function showAlert() {
   }
 }
 /*----------------Thông báo khi khách hàng nhập email-----------------------*/
+
+/*----------------Nút quay lại đầu trang--------------*/
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop()){
+      $('#backtop').fadeIn();
+      }
+    else{
+      $('#backtop').fadeOut();
+    }
+  });
+  $('#backtop').click(function(){
+    $('html,body').animate({scrollTop:0},1000);
+  });
+})
+/*----------------Nút quay lại đầu trang--------------*/
 
