@@ -582,6 +582,32 @@ body {
     width: 100%;
 }
 
+.container{
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content .active{
+    display: block;
+}
+.content img{
+    width: 100%;
+    height: 20rem;
+}
+
+.content p{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto 0rem;
+    color: #222;
+}
+
 
 
 /*----------------SP mới và SP bán chạy--------------*/
