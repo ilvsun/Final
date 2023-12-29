@@ -65,5 +65,15 @@ $(document).on('click','.xoasp',function(e){
     tinhTongTienDH();
 })
 
+showgiohang();
+    $('.normal button').click(function () {
+    // Lấy thông tin giỏ hàng từ sessionStorage
+    var gioHangString = sessionStorage.getItem('giohang');
+    var gioHang = JSON.parse(gioHangString);
 
+    // Lưu thông tin giỏ hàng vào sessionStorage trên trang checkout
+    sessionStorage.setItem('giohang_checkout', JSON.stringify(gioHang));
 
+    // Chuyển hướng sang trang checkout
+    window.location.href = 'checkout.html';
+});
