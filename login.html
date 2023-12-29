@@ -11,64 +11,65 @@
 <body>
 <!--header, navbar menu-->
 <header class="header">
-  <div class="header-1">
-      <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-      <form action="" class="search-form">
-          <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
-          <label for="search-box" class="fas fa-search"></label>
-      </form>
+    <div class="header-1">
+        <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
+            &emsp; <label for="search-box" class="fas fa-search"></label>
+        </form>
 
-      <div class="icons">
-          <div id="search-btn" class="fas fa-search"></div>
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-shopping-cart"></a>
-          <div id="login-btn" class="fas fa-user"></div>
-          <div id="mobile" class="fas fa-outdent"></div>
-      </div>
-  </div>
-
-  <div class="header-2">
-      <ul id="navbar">
-          <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Về chúng tôi</a></li>
-          <li><a href="#">Sản phẩm</a>
-              <ul class="dropdownnav">
-                  <li><a href="#">Hạt dinh dưỡng</a></li>
-                  <li><a href="#">Granola - Hạt mix</a></li>
-                  <li><a href="#">Các loại bánh</a></li>
-                  <li><a href="#">Ngũ cốc</a></li>
-                  <li><a href="#">Sữa hạt</a></li>
-              </ul>
-          </li>
-          <li><a href="#">Tin tức</a></li>
-          <li><a href="#">Liên hệ</a></li>
-          <li><a href="#">Khuyến mãi</a></li>
-  </div>
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="mobile" class="fas fa-outdent"></div>
+        </div>
+    </div>
+    <div class="header-2">
+        <ul id="navbar">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="aboutus.html">Về chúng tôi</a></li>
+            <li><a href="#">Sản phẩm</a>
+                <ul class="dropdownnav">
+                    <li><a href="#">Hạt dinh dưỡng</a></li>
+                    <li><a href="#">Granola - Hạt mix</a></li>
+                    <li><a href="#">Các loại bánh</a></li>
+                    <li><a href="#">Ngũ cốc</a></li>
+                    <li><a href="#">Sữa hạt</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+    </div>
 </header>
 
-
-  <!--Đăng ký-->
+<!--Đăng nhập--> 
 <section class="container-forms">
- <div class="form-login">
+  <div class ="form-login">
     <div class ="form-content">
-      <h2 id="dangnhap">Đăng ký</h2>
+      <h2 id="dangnhap">Đăng nhập</h2>
       <form action="#" id="flogin">
         <div class="field input-field">
           <input type="email" placeholder="Email" class="input">
         </div>
+
         <div class="field input-field">
           <input type="password" placeholder="Mật khẩu" class="password">
           <i class="fa-regular fa-eye-slash eye-icon"></i>
         </div>
-        <div class="field input-field">
-          <input type="password" placeholder="Nhập lại mật khẩu" class="password">
-          <i class="fa-regular fa-eye-slash eye-icon"></i>
-        </div>
-        <div class="field button-field">
-          <button>Đăng ký</button>
-        </div>
+        
         <div class="form-link">
-          <span>Đã có tài khoản, đăng nhập tại đây <a href="login.html" class="link login-link">Đăng nhập</a></span>
+          <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+        </div>
+
+        <div class="field button-field">
+          <button>Đăng nhập</button>
+        </div>
+
+        <div class="form-link">
+          <span>Đăng ký tài khoản tại đây <a href="signup.html" class="link signup-link">Đăng ký</a></span>
         </div>
       </form>
     </div>
@@ -77,14 +78,14 @@
     <div class="media-options">
       <a href="#" class="field-facebook">
         <i class="fa-brands fa-facebook fb-icon"></i>
-        &ensp; <span>Đăng ký với Facebook</span>
+        &ensp; <span>Đăng nhập với Facebook</span>
       </a>
     </div>
     <br>
     <div class="media-options">
       <a href="#" class="field-google">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="gg" class="google-img">
-        &ensp;<span>Đăng ký với Google</span>
+        &ensp;<span>Đăng nhập với Google</span>
       </a>
     </div>
   </div>
@@ -100,7 +101,6 @@
       <button class="normal-nlt">Đăng ký</button>
   </div>
 </section>
-
 <!--Footer-->
 <section>
   <footer class="footer">
@@ -168,6 +168,7 @@
           <a href="#"><i class="fab fa-youtube "></i></a>
       </div>
   </div>
-<script src="login.js"></script>
+  
+  <script src="login.js"></script>
 </body>
 </html>
