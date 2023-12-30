@@ -63,14 +63,14 @@
 #cart table tbody td {
     font-size: 13px;
     overflow: visible;
-    text-overflow: clip; /* Hiển thị toàn bộ nội dung mà không cắt */
-    white-space: normal; /* Cho phép xuống dòng tự động */
+    text-overflow: clip;
+    white-space: normal;
 }
 
 /*đổi màu nút xóa*/
 .xoasp {
     color: #6ac943; 
-    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi rê chuột vào nút */
+    cursor: pointer;
 }
 
 .xoasp:hover {
@@ -119,5 +119,3 @@
     padding: 10px;
     font-size: 13px;
 }
-
-
