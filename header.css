@@ -398,7 +398,7 @@ transition: all .3s ease-out;
   }
   #navbar .dropdownnav{
       margin-bottom: 0px;
-      z-index: 1000;
+      z-index: 10000;
   }
 
   #navbar .dropdownnav{
