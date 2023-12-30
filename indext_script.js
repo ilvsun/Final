@@ -198,7 +198,6 @@ submitBtn.addEventListener('click', ()=>{
 
 /*----------------Live Chat-----------------------*/
 
-
 /*----------------Nút quay lại đầu trang--------------*/
 $(document).ready(function(){
   $(window).scroll(function(){

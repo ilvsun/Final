@@ -839,7 +839,7 @@ input[type="text"]{
 
 /*----------------Responsive--------------*/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     .blogcards{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -854,6 +854,13 @@ input[type="text"]{
         max-width: 33.33%;
         padding: 0 1em;
     }
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }   
     
 }
 
@@ -881,27 +888,13 @@ input[type="text"]{
     }
 }
 
-@media screen and (max-width: 477px){
+@media screen and (max-width: 450px){
     .section-p1{
         padding: 20px;
     }
     #product1 .pro{
         width: 100%
     }
-
-}
-
-@media screen and (max-width:900px){
-    #newsletter .form-nlt{
-        padding-top: 20px;
-        width: 80%;
-    }
-    #newsletter{
-        font-size: 50%;
-    }   
-}
-
-@media (max-width: 450px){
     #newsletter .form-nlt{
         padding-top: 20px;
         width: 80%;
@@ -909,24 +902,12 @@ input[type="text"]{
     #newsletter{
         font-size: 50%;
     }
-}
-@media (max-width: 477px){
-    #newsletter .form-nlt{
-        padding-top: 20px;
-        width: 80%;
-    }
-    #newsletter{
-        font-size: 50%;
-    }
-}
-
-@media (max-width:500px){
-
     .chat-popup{
         bottom: 120px;
         right:10%;
         width: 80vw;
     }
+
 }
 
 /*----------------Responsive--------------*/
