@@ -329,6 +329,7 @@ font-family: sans-serif;
 overflow: hidden;
 box-shadow: 5px 10px 20px rgba(150,150, 150, .3);
 transition: all .3s ease-out;
+z-index: 1000;
 }
 
 
