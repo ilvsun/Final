@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <!-- Icon Trang chủ -->
     <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
+    <!-- Icon Trang chủ -->
+    
     <title>Trang chủ | Nutvigor</title>
 
     <!-- Icon Font CSS Include -->
@@ -38,7 +41,10 @@
 <header class="header">
     <div class="header-1">
         <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-        <form action="" class="search-form">
+        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
             <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
             &emsp; <label for="search-box" class="fas fa-search"></label>
         </form>
