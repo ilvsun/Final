@@ -426,7 +426,7 @@ z-index: 1000;
         padding: 50px 0 0 10px;
         transition: 0.3s;
         color: #302C2C;
-
+        z-index: 10000;
     }
     #navbar.active{
         left: 0px;
@@ -439,6 +439,7 @@ z-index: 1000;
     }
     #navbar .dropdownnav{
         margin-bottom: 0px;
+        z-index: 10000;
     }
 
     #navbar .dropdownnav{
