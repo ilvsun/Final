@@ -120,10 +120,31 @@ body {
     #prodetails .single-pro-details{
         width: 100%;
     }
+     #prodetails .single-pro-details h2{
+         font-size: 20px; }
+    #prodetails .single-pro-details h3 {
+    font-size: 20px;
+}
+    .favourite-item{
+    display: block;
+    background-color: #6AC943;
+    width: 100px;
+    height: 7.5%;
+    margin-top: 20px;
+    border-radius: 7px;
+    }
+    .add-to-cart{
+        display: block;
+    background-color: #6AC943;
+    width: 200px;
+    height: 70px;
+    margin-top: 20px;
+    border-radius: 7px;
+    }
     #product1 .pro-container{
         display: block;
     }
-}
+
 #prodetails {
     display: flex;
     margin-top: 20px;
