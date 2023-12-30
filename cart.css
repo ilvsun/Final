@@ -63,14 +63,14 @@
 #cart table tbody td {
     font-size: 13px;
     overflow: visible;
-    text-overflow: clip;
-    white-space: normal;
+    text-overflow: clip; 
+    white-space: normal; 
 }
 
 /*đổi màu nút xóa*/
 .xoasp {
     color: #6ac943; 
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .xoasp:hover {
@@ -115,7 +115,8 @@
 
 #subtotal table td {
     width: 50%;
-    /*border: 1px solid white;*/
     padding: 10px;
     font-size: 13px;
 }
+
+

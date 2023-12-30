@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="checkout.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hf.css">
     <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
 
 </head>
@@ -60,14 +60,6 @@
         <h3>Thông tin đặt hàng</h3>
         <!-- Bảng hiển thị sản phẩm từ giỏ hàng -->
         <table id="cart-table">
-            <thead>
-                <tr>
-                    <th>Ảnh</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Đơn giá</th>
-                    <th>Số lượng</th>
-                </tr>
-            </thead>
             <tbody>
                 <!-- Nội dung sản phẩm sẽ được hiển thị ở đây bằng JavaScript -->
             </tbody>
@@ -92,26 +84,15 @@
         <div id="customer-info">
             <h3>Thông tin người mua</h3>
             <form id="checkout-form">
-                <label for="fullName">Họ và tên:</label>
-                <input type="text" id="fullName" name="fullName" required>
-
-                <label for="phoneNumber">Số điện thoại:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required>
-
-                <label for="province">Tỉnh/Thành phố:</label>
-                <select class="" id="city" ><option value="" selected>Chọn tỉnh thành</option></select> 
-
-                <label for="district">Huyện/Quận:</label>
-                <select  id="district" ><option value="" selected>Chọn quận huyện</option></select> 
-
-                <label for="ward">Phường/Xã:</label>
-                <select id="ward" ><option value="" selected>Chọn phường xã</option></select>
-                
-                <label for="address">Địa chỉ cụ thể:</label>
-                <input type="text" id="detailedAddress" name="address" required>
-                <label for="paymentMethod">Ghi chú:</label>
-                <textarea name="" id="" cols="30" rows="4" placeholder="Nội dung"></textarea>
-
+                <input type="text" id="fullName" name="fullName" placeholder="Họ và tên" required>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Số điện thoại" required>
+                <div class="addres">
+                    <select class="" id="city" ><option value="" selected>Chọn tỉnh thành</option></select> 
+                    <select  id="district" ><option value="" selected>Chọn quận huyện</option></select> 
+                    <select id="ward" ><option value="" selected>Chọn phường xã</option></select>
+                </div>
+                <input type="text" id="detailedAddress" name="address" placeholder="Địa chỉ cụ thể" required>                
+                <textarea name="" id="" cols="30" rows="4" placeholder="Ghi chú"></textarea>
                 <button type="submit">Đặt hàng</button>
             </form>
         </div>

@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="hf.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
 </head>
 <body>
 <!--header, navbar menu-->
 <section class="header">
     <div class="header-1">
         <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
-            &emsp; <label for="search-box" class="fas fa-search"></label>
+        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
         </form>
 
         <div class="icons">
@@ -77,11 +79,11 @@
     </div>
     <div class="pro-container" id="productContainer">
         <div class="pro">
-            <a href="#">
-            <img src="images/Hạt dinh dưỡng sấy mộc/1.png" alt="">
+            <a href="chitiet1.html">
+                <img src="images/Bánh kẹo/Snack rong biển kẹp hạt dinh dưỡng.png" alt="">
             </a>
             <div class="des">
-                <h5>Hạt điều sấy mộc Nutvigor 500g</h5>
+                <h5>Snack Rong Biển Kẹp Hạt 160G</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -89,11 +91,43 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h4><span>250.000</span>đ</h4>
+                <h4><span>150.000</span>đ</h4>
             </div>
-            <button onclick="themvaogio(this)">
-                <i class="fal fa-shopping-cart cart"></i>
-            </button>
+            <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+        </div>
+        <div class="pro">
+            <a href="chitiet2.html">
+            <img src="images/Bánh kẹo/Bánh gạo lứt kẹp dứa.png" alt="">
+            </a>
+            <div class="des">
+                <h5>Bánh gạo lứt kẹp dứa</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4><span>100.000</span>đ</h4>
+            </div>
+            <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+        </div>
+        <div class="pro">
+            <a href="chitiet3.html">
+            <img src="images/Hạt dinh dưỡng sấy mộc/15.png" alt="">
+            </a>
+            <div class="des">
+                <h5>Hạt sen sấy mộc 500G Nutvigor</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4><span>100.000</span>đ</h4>
+            </div>
+            <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
         </div>
         <div class="pro">
             <a href="#">
@@ -110,13 +144,29 @@
                 </div>
                 <h4><span>9.000</span>đ</h4>
             </div>
-            <button onclick="themvaogio(this)">
-                <i class="fal fa-shopping-cart cart"></i>
-            </button>
+            <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+        </div>
+        <div class="pro">
+            <a href="#">
+            <img src="images/Hạt dinh dưỡng sấy mộc/5.png" alt="">
+            </a>
+            <div class="des">
+                <h5>Hạt hạnh nhân Nutvigor 500g</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4><span>199.000</span>đ</h4>
+            </div>
+            <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
         </div>
         <div class="pro">
             <a href="#">
             <img src="images/Hạt dinh dưỡng sấy mộc/3.png" alt="">
+            </a>
             <div class="des">
                 <h5>Hạt macca Nutvigor 500g</h5>
                 <div class="star">
@@ -126,153 +176,16 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h4>149.000 đ</h4>
-            </a>
+                <h4><span>149.000</span>đ</h4>
             </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-                <img src="images/Hạt dinh dưỡng sấy mộc/5.png" alt="">
-                <div class="des">
-                    <h5>Hạt hạnh nhân Nutvigor 500g</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>200.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-            <img src="images/Ngũ cốc/2.jpg" alt="">
-            <div class="des">
-                <h5>Ngũ cốc ăn kiêng 500g</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>279.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </a>
-        </div>
-        <div class="pro">
-            <a href="">
-            <img src="images/Ngũ cốc/3.jpg" alt="">
-            <div class="des">
-                <h5>Ngũ cốc trẻ em</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>259.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-            <img src="images/Granola/apple.png" alt="">
-            <div class="des">
-                <h5>Ngũ Cốc Granola Apple 300G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>140.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <a href="">
-        <div class="pro">
-            <img src="images/Granola/ym.png" alt="">
-            <div class="des">
-                <h5>Ngũ Cốc Granola 45% Yến Mạch 300G </h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>250.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-            <img src="images/Granola/Granola Chocolate.png" alt="">
-            <div class="des">
-                <h5>Ngũ Cốc Granola Matcha 300G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>120.000đ</h4>
-            </a>
-            </div>
-            <a href="#" id="addToCartBtn"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-            <img src="images/Granola/Granola original 2.png" alt="">
-            <div class="des">
-                <h5>Ngũ Cốc Granola Original 300G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>150.000 đ</h4>
-                </a>
-            </div>
-            <a href="#" id="addToCartBtn"> <i class="fas fa-shopping-cart cart "></i></a>
+            <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
         </div>
         <div class="pro">
             <a href="#">
-            <img src="images/Granola/Granola siêu hạt.png" alt="">
-            <div class="des">
-                <h5>Granola siêu hạt 300G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>125.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-                <img src="images/Granola/Hạt hạnh nhân rang bơ.png" alt="">
+                <img src="images/Hạt dinh dưỡng sấy mộc/3.png" alt="">
+                </a>
                 <div class="des">
-                    <h5>Granola hạnh nhân rang bơ 300G</h5>
+                    <h5>Hạt macca Nutvigor 500g</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -280,89 +193,173 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>130.000 đ</h4>
-            </a>
-            </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <div class="pro">
-            <a href="">
-            <img src="images/Granola/Hạt điều rang muối vỏ lụa.png" alt="">
-            <div class="des">
-                <h5>Granola điều rang muối vỏ lụa 300G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <h4><span>149.000</span>đ</h4>
                 </div>
-                <h4>140.000 đ</h4>
-            </a>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </a>
-        </div>
         <div class="pro">
-            <a href="">
-            <img src="images/Granola/Mix 5 hạt.png" alt="">
-            <div class="des">
-                <h5>Granola mix 5 hạt</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <a href="#">
+                <img src="images/Ngũ cốc/2.jpg" alt="">
+                </a>
+                <div class="des">
+                    <h5>Ngũ cốc ăn kiêng 500g</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>249.000</span>đ</h4>
                 </div>
-                <h4>150.000 đ</h4>
-            </a>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
         <div class="pro">
-            <a href="">
-            <img src="images/Granola/apple.png" alt="">
-            <div class="des">
-                <h5>Ngũ Cốc Granola Apple 300G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <a href="#">
+                <img src="images/Ngũ cốc/3.jpg" alt="">
+                </a>
+                <div class="des">
+                    <h5>Ngũ cốc trẻ em 500g</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>259.000</span>đ</h4>
                 </div>
-                <h4>140.000 đ</h4>
-            </a>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
-        <a href="">
         <div class="pro">
-            <img src="images/Granola/ym.png" alt="">
-            <div class="des">
-                <h5>Ngũ Cốc Granola 45% Yến Mạch 300G </h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <a href="#">
+                <img src="images/Granola/apple.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Ngũ Cốc Granola Apple 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>140.000</span>đ</h4>
                 </div>
-                <h4>250.000 đ</h4>
-            </a>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
-        </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/Granola/ym.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Ngũ Cốc Granola 45% Yến Mạch 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>250.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/Granola/Granola Chocolate.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Ngũ Cốc Granola Matcha 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>120.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/Granola/Granola original 2.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Ngũ Cốc Granola Original 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>150.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/Granola/Granola siêu hạt.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Granola siêu hạt 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>125.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/Granola/Hạt điều rang muối vỏ lụa.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Granola điều rang muối vỏ lụa 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>140.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+        <div class="pro">
+            <a href="#">
+                <img src="images/Granola/Mix 5 hạt.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Granola mix 5 hạt 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>150.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogiohang(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
 </section>
-
-<section id="pagination" class="section-p1">
-    <a href="#"><</a>
-    <a href="#" class="active">1</a>
-    <a href="product2.html">2</a>
-    <a href="#">3</a>
-    <a href="product2.html">></a>
-</section>
+<section id="newsletter">
+    <div class="newstext">
+        <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
+    </div>
+    <div class="form-nlt">
+        <input type="text" placeholder="Địa chỉ Email của bạn">
+        <button class="normal-nlt">Đăng ký</button>
+    </div>
+  </section>
 
 <!--Footer-->
 <section>
