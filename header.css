@@ -2,13 +2,6 @@
 :root{
     --box-shadow:0 .5rem 1rem rbga(0,0,0.1);
 }
-
-::-webkit-scrollbar{
-  width: 10px;
-}
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -93,15 +86,17 @@ body {
     border:#fff;
     border-radius: 20px;
 }
-.header .header-1 .search-form label{
-    font-size: 1.5rem;
-    padding-right: 1.5rem;
-    color:#302C2C;
-    cursor: pointer;
+.header .header-1 .search-form button{
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  background: none;
+  border: none;
+  color:#302C2C;
+  cursor: pointer;
 }
-.header .header-1 .search-form label:hover{
-    color:#266C0B;
-    border:#fff;
+.header .header-1 .search-form button:hover{
+  color:#266C0B;
+  border:#fff;
 }
 .header .header-1 .icons div,
 .header .header-1 .icons a{
@@ -315,10 +310,9 @@ footer a:hover{
   position: fixed; 	
   bottom: 50px; 	
   right: 5px;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
   padding-right: 0px;
   margin-left: auto;
-  z-index: 10000;
 }
 
 .iconn{
@@ -359,6 +353,55 @@ transition: all .3s ease-out;
 .iconn .fa-youtube {
   color: rgb(234, 19, 19);
 }
+/* Default styles */
+.main {
+  position: fixed; 	
+  bottom: 50px; 	
+  right: 5px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+}
+
+.iconn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #fff;
+  margin: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: sans-serif;
+  overflow: hidden;
+  box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+  transition: all .3s ease-out;
+}
+
+/* Hover effect */
+.iconn:hover {
+  width: 50px;
+  cursor: pointer;
+  align-items: center;
+  color: #eeeeee;
+}
+
+/* Social media icon colors */
+.iconn .fa-facebook-f {
+  color: rgb(85, 58, 255);
+}
+
+.iconn .fa-facebook-messenger {
+  color: rgb(85, 58, 255);
+}
+
+.iconn .fa-instagram {
+  color: rgb(223, 19, 36);
+}
+
+.iconn .fa-youtube {
+  color: rgb(234, 19, 19);
+}
 
 /* Animation cho icon mạng xã hội */
 .iconn {
@@ -366,6 +409,37 @@ transition: all .3s ease-out;
 }
 .iconn:hover {
   transform: scale(1.2);
+}
+
+/* Responsive icon*/
+@media (max-width: 900px) {
+  .iconn {
+    /* Các điều chỉnh kích thước cho màn hình <= 900px */
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .iconn {
+    /* Các điều chỉnh kích thước cho màn hình <= 768px */
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 477px) {
+  .iconn {
+    /* Các điều chỉnh kích thước cho màn hình <= 477px */
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 
 
@@ -499,7 +573,5 @@ transition: all .3s ease-out;
       font-size: 50%;
   }
 }
-
-
 
 
