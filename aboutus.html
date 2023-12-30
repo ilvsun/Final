@@ -14,9 +14,9 @@
 <header class="header">
     <div class="header-1">
         <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
-            &emsp; <label for="search-box" class="fas fa-search"></label>
+        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
         </form>
 
         <div class="icons">
@@ -255,6 +255,7 @@
   </div>
   
   <script src="aboutus.js"></script>
+  <script src="search.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
