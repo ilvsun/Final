@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Granola</title>
+    <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="hf.css">
+    <link rel="stylesheet" href="granola.css">
+</head>
+<body>
+<!--header, navbar menu-->
+<section class="header">
+    <div class="header-1">
+        <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
+        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart giohang">
+                <span id="countsp">0</span>
+              </a>
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="mobile" class="fas fa-outdent"></div>
+        </div>
+    </div>
+
+    <div class="header-2">
+        <ul id="navbar">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="aboutus.html">Về chúng tôi</a></li>
+            <li><a href="product.html">Sản phẩm</a>
+                <ul class="dropdownnav">
+                    <li><a href="#">Hạt dinh dưỡng</a></li>
+                    <li><a href="granola.html">Granola - Hạt mix</a></li>
+                    <li><a href="#">Các loại bánh</a></li>
+                    <li><a href="#">Ngũ cốc</a></li>
+                    <li><a href="#">Sữa hạt dinh dưỡng</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html">Tin tức</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+    </div>
+</section>
+<section id="page-header">
+        
+    <h2>GRANOLA</h2>
+    <p>Lựa chọn cho sức khỏe</p>
+    
+</section>
+<section id="product1" class="section-p1">
+    <div class="pro-container">
+        <div class="pro">
+            <a href="">
+            <img src="images/Granola/Granola Chocolate.png" alt="">
+            <div class="des">
+                <h5>Ngũ Cốc Granola Matcha 300G</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>120.000đ</h4>
+            </a>
+            </div>
+            <a href="#" id="addToCartBtn"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        <div class="pro">
+            <a href="">
+            <img src="images/Granola/Granola original 2.png" alt="">
+            <div class="des">
+                <h5>Ngũ Cốc Granola Original 300G</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>150.000 đ</h4>
+                </a>
+            </div>
+            <a href="#" id="addToCartBtn"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        <div class="pro">
+            <a href="#">
+            <img src="images/Granola/Granola siêu hạt.png" alt="">
+            <div class="des">
+                <h5>Granola siêu hạt 300G</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>125.000 đ</h4>
+            </a>
+            </div>
+            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        <div class="pro">
+            <a href="">
+                <img src="images/Granola/Hạt hạnh nhân rang bơ.png" alt="">
+                <div class="des">
+                    <h5>Granola hạnh nhân rang bơ 300G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>130.000 đ</h4>
+            </a>
+            </div>
+            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        <div class="pro">
+            <a href="">
+            <img src="images/Granola/Hạt điều rang muối vỏ lụa.png" alt="">
+            <div class="des">
+                <h5>Granola điều rang muối vỏ lụa 300G</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>140.000 đ</h4>
+            </a>
+            </div>
+            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
+        </a>
+        </div>
+        <div class="pro">
+            <a href="">
+            <img src="images/Granola/Mix 5 hạt.png" alt="">
+            <div class="des">
+                <h5>Granola mix 5 hạt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>150.000 đ</h4>
+            </a>
+            </div>
+            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        <div class="pro">
+            <a href="">
+            <img src="images/Granola/apple.png" alt="">
+            <div class="des">
+                <h5>Ngũ Cốc Granola Apple 300G</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>140.000 đ</h4>
+            </a>
+            </div>
+            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        <a href="">
+        <div class="pro">
+            <img src="images/Granola/ym.png" alt="">
+            <div class="des">
+                <h5>Ngũ Cốc Granola 45% Yến Mạch 300G </h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>150.000 đ</h4>
+            </a>
+            </div>
+            <a href="#"> <i class="fas fa-shopping-cart cart "></i></a>
+        </div>
+        
+</section>
+<section id="newsletter">
+    <div class="newstext">
+        <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
+    </div>
+    <div class="form-nlt">
+        <input type="text" placeholder="Địa chỉ Email của bạn">
+        <button class="normal-nlt">Đăng ký</button>
+    </div>
+  </section>
+
+<!--Footer-->
+<section>
+    <footer class="footer">
+        <div class="col">
+            <img class="logo" src="images/Logo/4.png" alt="logo">
+            <h4>Liên hệ</h4>
+            <P><strong>Địa chỉ :</strong> 12 chùa Bộc, P.Quang Trung, Q.Đống Đa, TP.Hà Nội</P>
+            <P><strong>Điện thoại :</strong> 0985701435</P>
+            <P><strong>Giờ mở cửa:</strong> 9:00 - 21:00 hàng ngày </P>
+            <div class="follow">
+                <h4>Theo dõi chúng tôi</h4>
+                <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Thông tin chung</h4>
+            <a href="#">Trang chủ</a>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Tin Tức</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Khuyến mãi</a>
+        </div>
+        <div class="col">
+            <h4>Cửa hàng</h4>
+            <a href="#">Ưu đãi thành viên</a>
+            <a href="#">Tài khoản</a>
+            <a href="#">Tuyển dụng</a>
+        </div>
+        <div class="col">
+            <h4>Chính sách</h4>
+            <a href="#">Phương thức vận chuyển</a>
+            <a href="#">Câu hỏi thường gặp</a>
+            <a href="#">Thông tin pháp lý</a>
+            <a href="#">Điền khoản sử dụng</a>
+        </div>
+        <div class="col install">
+            <h4>Cài đặt App</h4>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Cổng thanh toán bảo mật</p>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+    </footer>
+</section>
+<!--Icon MXh hiển thị-->
+    <div class="main">
+        <div class="iconn">
+            <a href="#"><i class="fab fa-facebook-f "></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-facebook-messenger "></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-instagram "></i></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-youtube "></i></a>
+        </div>
+    </div>
+    
+    <script src="search.js"></script>
+</html>
