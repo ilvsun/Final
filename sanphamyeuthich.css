@@ -10,6 +10,7 @@
     line-height: normal;
     font-family: "Montserrat", sans-serif;
     color: #6ac943;
+    text-align: center;
 }
 
 #wishlist table {
@@ -73,55 +74,22 @@
 }
 
 /*đổi màu nút xóa*/
-.xoasp {
+.xoa {
     color: #6ac943; 
     cursor: pointer; /* Biến con trỏ thành hình bàn tay khi rê chuột vào nút */
 }
 
-.xoasp:hover {
+.xoa:hover {
     color: #266C0B;
 }
 .dongia{
     font-weight: bold;
     color: #266C0B;
 }
-/*
-#subtotal button {
-    width: 100%;
-    background-color: #6AC943;
-    border: #6AC943;
-    color: #fff;
-    padding: 12px 20px;
+
+.cart{
+    color: #266C0B;
     cursor: pointer;
 }
-
-#subtotal button:hover {
-    color: #266C0B;
-}
-
-#subtotal {
-    width: 50%;
-    margin-bottom: 30px;
-    border: 1px solid #6AC943;
-    padding: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    color: #266C0B;
-    
-}
-
-#subtotal table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#subtotal table td {
-    width: 50%;
-    /*border: 1px solid white;
-    padding: 10px;
-    font-size: 13px;
-}*/
 
 
