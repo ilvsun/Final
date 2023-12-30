@@ -10,12 +10,22 @@
 body {
     width: 100%;
 }
-
 /*--------------Banner swiper---------------*/
 .swiper {
     width: 100%;
     height: 100%;
   }
+.header .header-1 .search-form button{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    background: none;
+    border: none;
+    color:#302C2C;
+    cursor: pointer;
+}
+.header .header-1 .search-form button:hover{
+    color:#266C0B;
+    border:#fff;
 
 .swiper-slide {
     text-align: center;
