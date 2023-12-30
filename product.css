@@ -149,13 +149,39 @@
 #product1 .pro .cart:hover {
     color: #266C0B; 
 }
+/*pagination*/
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #266C0B;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color:#fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+#pagination a:hover {
+    background-color: #103310; 
+}
 
+#pagination a.active {
+    background-color: #103310; 
+}
 
 @media (max-width: 768px){
     #product1{
         display: flex;
         flex-direction: column;
     }
+    #page-header{
+        height: 40vh;
+    }
+    #pagination a {
+        padding: 10px 15px; /* Điều chỉnh padding cho các nút */
+      }
 
 }
     
