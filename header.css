@@ -7,6 +7,8 @@
   width: 10px;
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -91,17 +93,16 @@ body {
     border:#fff;
     border-radius: 20px;
 }
-.header .header-1 .search-form button{
+.header .header-1 .search-form label{
     font-size: 1.5rem;
     padding-right: 1.5rem;
-    background: none;
-    border: none;
     color:#302C2C;
     cursor: pointer;
 }
-.header .header-1 .search-form button:hover{
+.header .header-1 .search-form label:hover{
     color:#266C0B;
     border:#fff;
+}
 .header .header-1 .icons div,
 .header .header-1 .icons a{
     font-size: 1.5rem;
@@ -205,6 +206,7 @@ ul li{
 #mobile{
     display: none;
 }
+
 
 /*Email*/
 #newsletter{
@@ -316,7 +318,6 @@ footer a:hover{
   margin-bottom: 0px;
   padding-right: 0px;
   margin-left: auto;
-  z-index: 10000;
 }
 
 .iconn{
@@ -386,6 +387,7 @@ transition: all .3s ease-out;
       padding: 50px 0 0 10px;
       transition: 0.3s;
       color: #302C2C;
+      z-index: 10000;
 
   }
   #navbar.active{
@@ -399,7 +401,7 @@ transition: all .3s ease-out;
   }
   #navbar .dropdownnav{
       margin-bottom: 0px;
-      z-index: 10000;
+      z-index: 1000;
   }
 
   #navbar .dropdownnav{
@@ -496,5 +498,7 @@ transition: all .3s ease-out;
       font-size: 50%;
   }
 }
+
+
 
 
