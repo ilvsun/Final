@@ -1,5 +1,6 @@
 .section-p1 {
-    padding: 10px 0px;
+    padding: 0px 0px;
+    background-color: #FFFAF0;
 }
 
 .section-m1 {
@@ -92,6 +93,65 @@ body {
 }
 /*--------------Features (Dịch vụ nổi bật)---------------*/
 
+/*----------------Tabs SP mới và SP hot--------------*/
+.containertab{
+    background-color: #FFFAF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .tabtitle {
+    font-size: 46px;
+    font-weight: 600;
+    color: #6AC943;
+    margin-bottom: 3rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .tab button {
+    flex-direction: row;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 20px;
+    background-color: #6AC943;
+    color: #fff;
+  }
+
+  .tab button:first-child {
+    margin-right: 0; /* Đặt giá trị margin-right cho nút đầu tiên */
+  }
+
+  .tab button:not(:first-child) {
+    margin-left: 0; /* Đặt giá trị margin-left cho các nút không phải là đầu tiên */
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #266C0B;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #266C0B;
+  }
+/*----------------Tabs SP mới và SP hot--------------*/
+
+/*----------------SP mới và SP hot--------------*/
+
 #product1 {
     text-align: center;
     border: 1px solid #FFFAF0;
@@ -99,6 +159,10 @@ body {
     background: #FFFAF0;
     /*padding-right: 70px;
     padding-left: 70px;*/
+}
+
+#product1 .section-p1{
+    padding: 0;
 }
 
 #product1 .pro-container {
@@ -175,6 +239,13 @@ body {
     color: #266C0B;
 }
 
+#product1 .pro .des h4 span{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #266C0B;
+}
+
 #product1 .pro .star i {
     color: #eeee13;
 }
@@ -192,30 +263,227 @@ body {
     right: 10px;
     color: #6AC943;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 #product1 .pro .cart:hover {
     color: #266C0B; 
 }
+/*----------------SP mới và SP hot--------------*/
 
-.section-p1 .fa-circle-chevron-left {
+/*----------------flash_deals--------------*/
+.container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+.flex {
+    display: flex;
+  }
+  
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.mtop {
+    margin-top: 0;
+  }
+
+.heading{
+    padding: 20px 0 0 0;
+    margin-bottom: 30px;
+  }
+
+.heading h2{
+    font-size: 46px;
+    color: #6ac943;
+    line-height: 54px;
+  }
+.heading h2 i{
+    font-size: 40px;
+    line-height: 54px;
+    color: red;
+    margin-right: 10px;
+  }
+  
+.heading a{
     font-size: 30px;
-    color: #6AC943;
-    margin-top: -20px;
-    margin-left: 30px;
-    float: left;
+    line-height: 54px;
+    color: #266C0B;
+    margin-right: 10px;
+  }
+
+.heading a i {
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+.flash_deals .item{
+    padding: 20px;
+    border: 1px solid #6AC943;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+    background: #ffffff;
+  }
+
+.flash_deals .item:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+
+.owl-carousel .owl-item img {
+    border-radius: 20px;
+  }
+
+.flash_deals .img span{
+    position: absolute;
+    background: #266C0B;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+    top: 10px;
+    left: 10px; 
+    z-index: 1;
+  }
+
+.flash_deals .star{
+    flex-direction: row;
+
+  }
+
+.flash_deals .view{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    font-size: 20px;
+  }
+
+.flash_deals .item:hover .view{
+    opacity: 1;
+    color: #266C0B;
+  }
+
+.flash_deals .item:hover .view a{
+    color: #266C0B;
+}
+
+.flash_deals .star i{
+    padding-top: 7px;
+    color: #f7d833;
+    margin: 5px 5px 5px 0;
+  }
+
+.flash_deals h5 {
+    padding-top: 7px;
+    color: #302C2C;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
-.section-p1 .fa-circle-chevron-right {
-    font-size: 30px;
-    color: #6AC943;
-    margin-top: -20px;
-    margin-right: 30px;
-    float: right;
-    transition: color 0.3s ease;
+.flash_deals h5:hover {
+    color: #266C0B; 
 }
 
+.flash_deals p{
+    color: #266C0B;
+  }
+
+.flash_deals p span{
+    color: #266C0B;
+  }
+
+.flash_deals p label{
+    text-decoration: line-through;
+    color: #302C2C;
+    margin-left: 10px;
+  }
+
+.flash_deals .price i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #6AC943;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: #6AC943;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.flash_deals .price i:hover{
+    color: #266C0B;
+  }
+  
+.owl-nav i{
+    font-size: 20px;
+    transition: 005s;
+    width: 50px;
+    height: 50px;
+    background: #e2eff7;
+    border-radius: 50%;
+    color: white;
+    line-height: 50px;
+  }
+
+.owl-nav i:hover{
+    background: #266C0B;
+    color: #fff;
+  }
+.owl-next i,
+.owl-prev i{
+    position: absolute;
+    top: 40%;
+  }
+
+.owl-next i{
+    right: -20px;
+    background: #6AC943;
+  }
+
+.owl-prev i{
+    left: -20px;
+  }
+/*----------------flash_deals--------------*/
+
+/*----------------Popup--------------*/
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* CSS cho nền mờ xung quanh popup */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+/*----------------Popup--------------*/
+
+/*----------------Blog Tin tức--------------*/
 .blogcontainer{
     width: 100%;
     background-color: #FFFAF0;
@@ -235,15 +503,6 @@ body {
 .blog-section .blogtitle h2{
     font-size: 40px;
     color: #6AC943;
-    margin-top: 50px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.blog-section .blogtitle p{
-    font-size: 18px;
-    color: #302C2C;
-    font-family: "Montserrat", sans-serif;
-    margin: 15px 0 20px 0;
 }
 
 .blogcards{
@@ -262,6 +521,7 @@ body {
 .blogimage img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .blogcontent{
@@ -286,332 +546,77 @@ body {
     display: inline-block;
     background-color: #266C0B;
     padding: 8px 15px;
+    border-radius: 50px;
 }
 
 .blogcard .blogposted-date{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -30px;
+    right: 0;
     display: inline-block;
-    background-color: #6AC943;
-    padding: 6px 15px;
-}
-
-@media screen and (max-width: 992px) {
-    .blogcards{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .features-section{
-        padding: 1em;
-    }
-    .features-card{
-        padding: 5em 2em;
-    }
-    .features-column{
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-        padding: 0 1em;
-    }
+    background-color: #266C0B;
+    padding: 0px 0px;
+    border-radius: 30px;
     
 }
 
-@media screen and (max-width: 768px) {
-    #product1 .container{
-        justify-content: space-between;
-    }
-
-    #product1 .pro{
-        margin: 15px;
-    }
-    .blogcards{
-        grid-template-columns: 1fr;
-    }
-    .features-section{
-        padding: 1em 7em;
-    }
-    
-    #newsletter .form{
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 477px){
-    #product1 .pro{
-        width: 100%
-    }
-
-}
-/*----------------flash_deals--------------*/
-.container {
-    max-width: 90%;
-    margin: auto;
-  }
-
-.flex {
-    display: flex;
-  }
-  
-.flex1 {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .mtop {
-    margin-top: 0;
-  }
-
-  .heading{
-    padding: 20px 0 0 0;
-    margin-bottom: 30px;
-  }
-
-  .heading h2{
-    font-size: 46px;
-    color: #6ac943;
-    line-height: 54px;
-  }
-  .heading h2 i{
-    font-size: 40px;
-    line-height: 54px;
-    color: #6AC943;
-    margin-right: 10px;
-  }
-  
-  .heading a{
-    font-size: 30px;
-    line-height: 54px;
-    color: #266C0B;
-    margin-right: 10px;
-  }
-
-  .heading a i {
-    margin-left: 5px;
-    font-size: 30px;
-  }
-
-  .flash_deals .item{
-    padding: 20px;
-    border: 1px solid #6AC943;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
-    margin: 15px 10px;
-    transition: 0.2s ease;
-    position: relative;
-    background: #ffffff;
-  }
-
-  .flash_deals .item:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-  }
-
-  .owl-carousel .owl-item img {
-    border-radius: 20px;
-  }
-
-  .flash_deals .img span{
-    background: #266C0B;
-    padding: 5px 10px;
-    border-radius: 50px;
+.blogcard .blogposted-date p{
     font-size: 12px;
     color: #fff;
-  }
+    margin: 10px 10px;
 
-  .flash_deals .star{
-    flex-direction: row;
-
-  }
-
-  .flash_deals .view{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    opacity: 0;
-    font-size: 20px;
-  }
-
-  .flash_deals .item:hover .view{
-    opacity: 1;
-    color: #266C0B;
-  }
-
-  .flash_deals .star i{
-    padding-top: 7px;
-    color: #f7d833;
-    margin: 5px 5px 5px 0;
-  }
-
-  .flash_deals h5 {
-    padding-top: 7px;
-    color: #302C2C;
-    font-size: 14px;
-    transition: color 0.3s ease;
 }
-
-.flash_deals h5:hover {
-    color: #266C0B; 
-}
-
-  .flash_deals p span{
-    color: #266C0B;
-  }
-
-  .flash_deals p label{
-    text-decoration: line-through;
-    color: #302C2C;
-    margin-left: 10px;
-  }
-
-  .flash_deals .price i{
-    font-size: 20px;
-    color: #6AC943;
-  }
-
-  .flash_deals .price i:hover{
-    color: #266C0B;
-  }
-  
-  .owl-nav i{
-    font-size: 20px;
-    transition: 005s;
-    width: 50px;
-    height: 50px;
-    background: #e2eff7;
-    border-radius: 50%;
-    color: white;
-    line-height: 50px;
-  }
-
-  .owl-nav i:hover{
-    background: #266C0B;
-    color: #fff;
-  }
-  .owl-next i,
-  .owl-prev i{
-    position: absolute;
-    top: 40%;
-  }
-
-  .owl-next i{
-    right: -20px;
-    background: #6AC943;
-  }
-
-  .owl-prev i{
-    left: -20px;
-  }
-/*----------------flash_deals--------------*/
-
-/*----------------Tabs SP mới và SP hot--------------*/
-.containertab{
-    background-color: #FFFAF0;
-}
-.tab {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin: 0 65px;
-
-  }
-
-  .tabtitle {
-    font-size: 46px;
-    font-weight: 600;
-    color: #6AC943;
-    margin-bottom: 3rem;
-    margin-right: auto;
-    margin-top: 10px;
-
-
-  }
-  
-  .tab button {
-    background-color: inherit;
-    float: right;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    margin-left: auto; /* Đẩy button về bên phải của dòng */
-    border-radius: 20px;
-    background-color: #6AC943;
-    color: #fff;
-  }
-
-  .tab button:first-child {
-    margin-right: 0; /* Đặt giá trị margin-right cho nút đầu tiên */
-  }
-
-  .tab button:not(:first-child) {
-    margin-left: 0; /* Đặt giá trị margin-left cho các nút không phải là đầu tiên */
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #266C0B;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #266C0B;
-  }
-/*----------------Tabs SP mới và SP hot--------------*/
+/*----------------Blog Tin tức--------------*/
 
 /*----------------Nhập email nhận khuyến mãi--------------*/
-.flex1 {
+/*Email*/
+#newsletter{
     display: flex;
     justify-content: space-between;
-  }
-
-.newsletter{
-    text-align: center;
-    background-color: #266C0B;
-}
-
-.newsletter .container{
-    max-width: 50%;
-    margin: auto;
-}
-
-.newsletter i{
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.newsletter h2{
-    color: #fff;
-    font-size: 20px;
-}
-
-.input {
-    background: #fff;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .input input {
-    width: 100%; /* Chiều rộng 100% để lấp đầy không gian còn lại trong .input */
+    background-color: #266C0B;
+    background-position: 20% 30%;
+    padding: 40px 60px 40px 60px;
+}
+#newsletter h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #eeeeee;
+}
+#newsletter .form-nlt{
+    display:flex;
+    width: 50%;
+    border-radius: 4px;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+#newsletter .normal-nlt{
+    background-color: #6AC943;
+    font-size: 18px;
+    color: #fff;
+    white-space: nowrap;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .input button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-weight: bold;
+}
+#newsletter .normal-nlt:hover{
+    background-color: #302C2C;
+}
 /*----------------Nhập email nhận khuyến mãi--------------*/
 
 
@@ -644,6 +649,90 @@ body {
 }
 /*----------------Nút quay lại đầu trang--------------*/
 
+/*----------------Responsive--------------*/
+
+@media screen and (max-width: 992px) {
+    .blogcards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-section{
+        padding: 1em;
+    }
+    .features-card{
+        padding: 5em 2em;
+    }
+    .features-column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    #product1 .container{
+        justify-content: space-between;
+    }
+
+    #product1 .pro{
+        margin: 0px;
+    }
+    .blogcards{
+        grid-template-columns: 1fr;
+    }
+    .features-section{
+        padding: 1em 7em;
+    }
+    
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #product1 .pro{
+        width: 100%
+    }
+
+}
+
+@media screen and (max-width:900px){
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }   
+}
+
+@media (max-width: 450px){
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+}
+@media (max-width: 477px){
+    #newsletter .form-nlt{
+        padding-top: 20px;
+        width: 80%;
+    }
+    #newsletter{
+        font-size: 50%;
+    }
+}
+
+/*----------------Responsive--------------*/
 
 
 
