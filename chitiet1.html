@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
     <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -13,6 +15,7 @@
 <!--header, navbar menu-->
 <header class="header">
     <div class="header-1">
+        <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
         <form action="product.html" class="search-form" onsubmit="return searchProduct()">
             <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
             &emsp; <button type="submit"><i class="fas fa-search"></i></button>
@@ -21,7 +24,9 @@
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
             <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
-            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart">
+                 <span id="countsp">0</span>
+            </a>
             <div id="login-btn" class="fas fa-user"></div>
             <div id="mobile" class="fas fa-outdent"></div>
         </div>
@@ -281,13 +286,13 @@
 <!--Icon MXh hiển thị-->
     <div class="main">
         <div class="iconn">
-            <a href="#"><i class="fab fa-facebook-f "></i></a>
+            <a href="https://www.facebook.com/nutvigor/"><i class="fab fa-facebook-f "></i></a>
         </div>
         <div class="iconn">
-            <a href="#"><i class="fab fa-facebook-messenger "></i></a>
+            <a href="https://www.facebook.com/messages/t/166376683230100"><i class="fab fa-facebook-messenger "></i></a>
         </div>
         <div class="iconn">
-            <a href="#"><i class="fab fa-instagram "></i></i></a>
+            <a href="https://www.instagram.com/nutvigor/"><i class="fab fa-instagram "></i></i></a>
         </div>
         <div class="iconn">
             <a href="#"><i class="fab fa-youtube "></i></a>
@@ -295,6 +300,9 @@
     </div>
    
     <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="header.js"></script>
+    <script src="indext_script.js"></script>
+    <script src="search.js"></script>
     <script src="chitiet1.js"></script>
 </body>
 </html>
