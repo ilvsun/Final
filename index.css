@@ -21,7 +21,7 @@ body {
 }
 .header .header-1 .search-form button:hover{
     color:#266C0B;
-    border:#fff;
+    border:#fff;}
 /*--------------Banner swiper---------------*/
 .swiper {
     width: 100%;
