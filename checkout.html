@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93ư35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
 
 </head>
@@ -98,21 +99,18 @@
                 <input type="tel" id="phoneNumber" name="phoneNumber" required>
 
                 <label for="province">Tỉnh/Thành phố:</label>
-                <input type="text" id="province" name="address" required>
+                <select class="" id="city" ><option value="" selected>Chọn tỉnh thành</option></select> 
 
                 <label for="district">Huyện/Quận:</label>
-                <input type="text" id="district" name="address" required>
+                <select  id="district" ><option value="" selected>Chọn quận huyện</option></select> 
 
                 <label for="ward">Phường/Xã:</label>
-                <input type="text" id="ward" name="address" required>
-
+                <select id="ward" ><option value="" selected>Chọn phường xã</option></select>
+                
                 <label for="address">Địa chỉ cụ thể:</label>
                 <input type="text" id="detailedAddress" name="address" required>
-                <label for="paymentMethod">Hình thức thanh toán:</label>
-                <select id="paymentMethod" name="paymentMethod" required>
-                    <option value="cashOnDelivery">Thanh toán khi nhận hàng</option>
-                    <option value="bankTransfer">Thanh toán chuyển khoản</option>
-                </select>
+                <label for="paymentMethod">Ghi chú:</label>
+                <textarea name="" id="" cols="30" rows="4" placeholder="Nội dung"></textarea>
 
                 <button type="submit">Đặt hàng</button>
             </form>
@@ -185,5 +183,48 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="checkout.js"></script>
     <script src="search.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        var citis = document.getElementById("city");
+        var districts = document.getElementById("district");
+        var wards = document.getElementById("ward");
+        var Parameter = {
+        url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json", 
+        method: "GET", 
+        responseType: "application/json", 
+        };
+        var promise = axios(Parameter);
+        promise.then(function (result) {
+        renderCity(result.data);
+        });
+        
+        function renderCity(data) {
+        for (const x of data) {
+            citis.options[citis.options.length] = new Option(x.Name, x.Id);
+        }
+        citis.onchange = function () {
+            district.length = 1;
+            ward.length = 1;
+            if(this.value != ""){
+            const result = data.filter(n => n.Id === this.value);
+        
+            for (const k of result[0].Districts) {
+                district.options[district.options.length] = new Option(k.Name, k.Id);
+            }
+            }
+        };
+        district.onchange = function () {
+            ward.length = 1;
+            const dataCity = data.filter((n) => n.Id === citis.value);
+            if (this.value != "") {
+            const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+        
+            for (const w of dataWards) {
+                wards.options[wards.options.length] = new Option(w.Name, w.Id);
+            }
+            }
+        };
+        }
+    </script>
+    </body>
 </html>
