@@ -114,16 +114,7 @@ body {
 #search-btn{
     display: none;
 }
-#countsp {
-  background-color: #fff; 
-  color: #6AC943;
-  border-radius: 50%; 
-  padding: 4px 6px; 
-  font-size: 12px;
-  position: absolute; 
-  top: -11px; 
-  right: -10px; 
-}
+
 /*menu*/
 .header .header-2{
     background: #fbf8d7;
@@ -213,7 +204,16 @@ ul li{
 #mobile{
     display: none;
 }
-
+#countsp {
+  background-color: #fff; 
+  color: #6AC943;
+  border-radius: 50%; 
+  padding: 4px 6px; 
+  font-size: 12px;
+  position: absolute; 
+  top: -11px; 
+  right: -10px; 
+}
 
 /*Email*/
 #newsletter{
