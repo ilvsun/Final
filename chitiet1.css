@@ -86,13 +86,15 @@ body {
     border:#fff;
     border-radius: 20px;
 }
-.header .header-1 .search-form label{
+.header .header-1 .search-form button{
     font-size: 1.5rem;
     padding-right: 1.5rem;
+    background: none;
+    border: none;
     color:#302C2C;
     cursor: pointer;
 }
-.header .header-1 .search-form label:hover{
+.header .header-1 .search-form button:hover{
     color:#266C0B;
     border:#fff;
 }
@@ -192,6 +194,55 @@ ul li{
 
 #mobile{
     display: none;
+}
+
+/*Email*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #266C0B;
+    background-position: 20% 30%;
+    padding: 40px 60px 40px 60px;
+}
+#newsletter h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #eeeeee;
+}
+#newsletter .form-nlt{
+    display:flex;
+    width: 50%;
+    border-radius: 4px;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+#newsletter .normal-nlt{
+    background-color: #6AC943;
+    font-size: 18px;
+    color: #fff;
+    white-space: nowrap;
+    border: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-weight: bold;
+}
+#newsletter .normal-nlt:hover{
+    background-color: #302C2C;
 }
 
 /*Footer*/
@@ -362,6 +413,13 @@ color:rgb(234, 19, 19);
     .header .header-1{
         padding: 2rem;
     }
+    #newsletter .form-nlt{
+      padding-top: 20px;
+      width: 80%;
+  }
+    #newsletter{
+      font-size: 50%;
+  }
     #prodetails{
         display: flex;
         flex-direction: column;
@@ -394,6 +452,14 @@ color:rgb(234, 19, 19);
     #mobile{
         display: inline-block;
     }
+    
+  #newsletter .form-nlt{
+      padding-top: 20px;
+      width: 80%;
+  }
+  #newsletter{
+      font-size: 50%;
+  }
     footer{
         display: flex;
         flex-direction: column;
@@ -423,6 +489,13 @@ color:rgb(234, 19, 19);
     #mobile{
         display: inline-block;
     }
+      #newsletter .form-nlt{
+      padding-top: 20px;
+      width: 80%;
+  }
+  #newsletter{
+      font-size: 50%;
+  }
     #prodetails{
         display: flex;
         flex-direction: column;
