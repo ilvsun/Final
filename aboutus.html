@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" href="header.css">
 </head>
 <body>
 <!--header, navbar menu-->
 <header class="header">
     <div class="header-1">
         <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
-            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
-            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
+            &emsp; <label for="search-box" class="fas fa-search"></label>
         </form>
+
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
             <a href="#" class="fas fa-heart"></a>
@@ -29,25 +29,26 @@
     </div>
     <div class="header-2">
         <ul id="navbar">
-            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="#">Trang chủ</a></li>
             <li><a href="aboutus.html">Về chúng tôi</a></li>
-            <li><a href="product.html">Sản phẩm</a>
+            <li><a href="#">Sản phẩm</a>
                 <ul class="dropdownnav">
                     <li><a href="#">Hạt dinh dưỡng</a></li>
                     <li><a href="#">Granola - Hạt mix</a></li>
                     <li><a href="#">Các loại bánh</a></li>
                     <li><a href="#">Ngũ cốc</a></li>
-                    <li><a href="#">Sữa hạt dinh dưỡng</a></li>
+                    <li><a href="#">Sữa hạt</a></li>
                 </ul>
             </li>
-            <li><a href="blog.html">Tin tức</a></li>
-            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
             <li><a href="#">Khuyến mãi</a></li>
     </div>
 </header>
 <section id="bd-abu">
+  
 <!--Về chúng tôi--> 
-<section class="hero section" id="hero">
+<section class="hero section animated-section" id="hero">
     <div class="hero_container container grid">
       <div class="hero_content">
         <h1>VỀ NUTVIGOR</h1>
@@ -76,7 +77,7 @@
 </section>
 
 <!--About section-->
-<section class="about section" id="about">
+<section class="about section animated-section" id="about">
   <h2 class="section_title">Đội ngũ của Nutvigor</h2>
   <div class="about_container container grid" id="aboutctn">
     <div class="about_img">
@@ -108,7 +109,7 @@
   </div>
 </section>
 
-<section class="cnhan section" id="cnhan">
+<section class="cnhan section animated-section" id="cnhan">
   <h2 class="section_title">Chứng nhận của Nutvigor</h2>
   <div class="cnhan_container container grid">
     <div class="certificate_image">
@@ -120,7 +121,7 @@
   </div>
 </section>
 
-<section class="testimontial section" id="tes_sec">
+<section class="testimontial section animated-section " id="tes_sec">
   <h2 class="section_title">Khách hàng thân thiết của Nutvigor</h2>
 
   <div class="testimontial_container container swiper">
@@ -236,6 +237,7 @@
       </div>
   </footer>
 </section>
+
 <!--Icon MXh hiển thị-->
   <div class="main">
       <div class="iconn">
@@ -251,10 +253,8 @@
           <a href="#"><i class="fab fa-youtube "></i></a>
       </div>
   </div>
-
-  <script src="header.js"></script>
+  
   <script src="aboutus.js"></script>
-  <script src="search.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
