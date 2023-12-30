@@ -114,6 +114,16 @@ body {
 #search-btn{
     display: none;
 }
+#countsp {
+  background-color: #fff; 
+  color: #6AC943;
+  border-radius: 50%; 
+  padding: 4px 6px; 
+  font-size: 12px;
+  position: absolute; 
+  top: -11px; 
+  right: -10px; 
+}
 /*menu*/
 .header .header-2{
     background: #fbf8d7;
@@ -461,7 +471,12 @@ z-index: 1000;
     #mobile{
         display: inline-block;
     }
-
+    #countsp{
+    width: auto;
+    height: auto;
+    font-size: 60%;
+    text-align: center;
+    }
     #newsletter .form-nlt{
         padding-top: 20px;
         width: 80%;
