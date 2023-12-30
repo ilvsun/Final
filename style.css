@@ -87,16 +87,17 @@ body {
     border-radius: 20px;
 }
 .header .header-1 .search-form button{
-    font-size: 1.5rem;
-    padding-right: 1.5rem;
-    background: none;
-    border: none;
-    color:#302C2C;
-    cursor: pointer;
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  background: none;
+  border: none;
+  color:#302C2C;
+  cursor: pointer;
 }
 .header .header-1 .search-form button:hover{
-    color:#266C0B;
-    border:#fff;
+  color:#266C0B;
+  border:#fff;
+}
 .header .header-1 .icons div,
 .header .header-1 .icons a{
     font-size: 1.5rem;
@@ -1978,6 +1979,7 @@ color:rgb(234, 19, 19);
   margin-left: 40px;
 
 }
+
 .tabs button {
   min-width: 80px;
   padding: 16px 20px 11px 20px;
