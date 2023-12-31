@@ -15,179 +15,162 @@
 </head>
 <body>
 <!--header, navbar menu-->
-<section class="header">
-    <div class="header-1">
-        <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-        <form action="product.html" class="search-form" onsubmit="return searchProduct()">
-            <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
-            &emsp; <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-
-        <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
-            <a href="cart.html" class="fas fa-shopping-cart giohang">
-                <span id="countsp">0</span>
-              </a>
-            <div id="login-btn" class="fas fa-user"></div>
-            <div id="mobile" class="fas fa-outdent"></div>
-        </div>
-    </div>
-
-    <div class="header-2">
-        <ul id="navbar">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="aboutus.html">Về chúng tôi</a></li>
-            <li><a href="product.html">Sản phẩm</a>
-                <ul class="dropdownnav">
-                    <li><a href="#">Hạt dinh dưỡng</a></li>
-                    <li><a href="granola.html">Granola - Hạt mix</a></li>
-                    <li><a href="#">Các loại bánh</a></li>
-                    <li><a href="#">Ngũ cốc</a></li>
-                    <li><a href="#">Sữa hạt </a></li>
-                </ul>
-            </li>
-            <li><a href="blog.html">Tin tức</a></li>
-            <li><a href="lienhe.html">Liên hệ</a></li>
-            <li><a href="#">Khuyến mãi</a></li>
-    </div>
-</section>
-<section id="page-header">
-        
-    <h2>NUTVIGOR</h2>
-    <p>Lựa chọn cho sức khỏe</p>
-    
-</section>
-
-<section id="product1" class="section-p1">
-    <div class="pro-filter">
-        <h3>Bộ lọc tìm kiếm:</h3>
-        <div class="category-filter" id="filter">
-            <h5>Danh mục sản phẩm</h5>
-           <ul>
-            <li><a href="#">Hạt dinh dưỡng</a></li>
-            <li><a href="granola.html">Granola - Hạt mix</a></li>
-            <li><a href="#">Các loại bánh</a></li>
-            <li><a href="#">Ngũ cốc</a></li>
-            <li><a href="#">Sữa hạt dinh dưỡng</a></li>
-           </ul>
-        </div>
-        <div class="price-filter" id="filter">
-            <h5>Lọc theo giá</h5>
-            <form id="priceFilterForm">
-                <label><input type="checkbox" id="priceRange0-100000" name="priceRange" value="0-100000"> 0đ - 100,000đ</label>
-                <label><input type="checkbox" id="priceRange100000-200000" name="priceRange" value="100000-200000"> 100,000đ - 200,000đ</label>
-                <label><input type="checkbox" id="priceRange200000-500000" name="priceRange" value="200000-500000"> 200,000đ - 500,000đ</label>
-                <button type="button" onclick="applyPriceFilter()">Áp dụng</button>
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
+            <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+                <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+                &emsp; <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-        </div>
 
-    </div>
-    <div class="pro-container" id="productContainer">
-        <div class="pro">
-            <a href="chitiet2.html">
-            <img src="images/Bánh kẹo/Bánh gạo lứt kẹp dứa.png" alt="">
-            </a>
-            <div class="des">
-                <h5>Bánh gạo lứt kẹp dứa</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4><span>100.000</span>đ</h4>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart">
+                    <span id="countsp">0</span>
+                </a>
+                <div id="login-btn" class="fas fa-user"></div>
+                <div id="mobile" class="fas fa-outdent"></div>
             </div>
-            <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-            <a href="chitiet3.html">
-            <img src="images/Hạt dinh dưỡng sấy mộc/15.png" alt="">
-            </a>
-            <div class="des">
-                <h5>Hạt sen sấy mộc 500G Nutvigor</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4><span>100.000</span>đ</h4>
+        <div class="header-2">
+            <ul id="navbar">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="aboutus.html">Về chúng tôi</a></li>
+                <li><a href="product.html">Sản phẩm</a>
+                    <ul class="dropdownnav">
+                        <li><a href="#">Hạt dinh dưỡng</a></li>
+                        <li><a href="granola.html">Granola - Hạt mix</a></li>
+                        <li><a href="#">Các loại bánh</a></li>
+                        <li><a href="#">Ngũ cốc</a></li>
+                        <li><a href="#">Sữa hạt</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="page-header">
+            
+        <h2>NUTVIGOR</h2>
+        <p>Lựa chọn cho sức khỏe</p>
+        
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-filter">
+            <h3>Bộ lọc tìm kiếm:</h3>
+            <div class="category-filter" id="filter">
+                <h5>Danh mục sản phẩm</h5>
+            <ul>
+                <li><a href="#">Hạt dinh dưỡng</a></li>
+                <li><a href="granola.html">Granola - Hạt mix</a></li>
+                <li><a href="#">Các loại bánh</a></li>
+                <li><a href="#">Ngũ cốc</a></li>
+                <li><a href="#">Sữa hạt dinh dưỡng</a></li>
+            </ul>
             </div>
-            <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-        </div>
-        <div class="pro">
-            <a href="chitiet1.html">
-                <img src="images/Bánh kẹo/Snack rong biển kẹp hạt dinh dưỡng.png" alt="">
-            </a>
-            <div class="des">
-                <h5>Snack Rong Biển Kẹp Hạt 160G</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4><span>150.000</span>đ</h4>
+            <div class="price-filter" id="filter">
+                <h5>Lọc theo giá</h5>
+                <form id="priceFilterForm">
+                    <label><input type="checkbox" id="priceRange0-100000" name="priceRange" value="0-100000"> 0đ - 100,000đ</label>
+                    <label><input type="checkbox" id="priceRange100000-200000" name="priceRange" value="100000-200000"> 100,000đ - 200,000đ</label>
+                    <label><input type="checkbox" id="priceRange200000-500000" name="priceRange" value="200000-500000"> 200,000đ - 500,000đ</label>
+                    <button type="button" onclick="applyPriceFilter()">Áp dụng</button>
+                </form>
             </div>
-            <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
+
         </div>
-        <div class="pro">
-            <a href="#">
-            <img src="images/Sữa hạt dinh dưỡng/12.png" alt="">
-            </a>
-            <div class="des">
-                <h5>Sữa Hạt Đậu Nành Óc Chó 180ML</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+        <div class="pro-container" id="productContainer">
+            <div class="pro">
+                <a href="chitiet2.html">
+                <img src="images/Bánh kẹo/Bánh gạo lứt kẹp dứa.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Bánh gạo lứt kẹp dứa</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>100.000</span>đ</h4>
                 </div>
-                <h4><span>9.000</span>đ</h4>
+                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-        </div>
-        <div class="pro">
-            <a href="#">
-            <img src="images/Hạt dinh dưỡng sấy mộc/5.png" alt="">
-            </a>
-            <div class="des">
-                <h5>Hạt hạnh nhân Nutvigor 500g</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="chitiet3.html">
+                <img src="images/Hạt dinh dưỡng sấy mộc/15.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Hạt sen sấy mộc 500G Nutvigor</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>100.000</span>đ</h4>
                 </div>
-                <h4><span>199.000</span>đ</h4>
+                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-        </div>
-        <div class="pro">
-            <a href="#">
-            <img src="images/Hạt dinh dưỡng sấy mộc/3.png" alt="">
-            </a>
-            <div class="des">
-                <h5>Hạt macca Nutvigor 500g</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="chitiet1.html">
+                    <img src="images/Bánh kẹo/Snack rong biển kẹp hạt dinh dưỡng.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Snack Rong Biển Kẹp Hạt 160G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>150.000</span>đ</h4>
                 </div>
-                <h4><span>149.000</span>đ</h4>
+                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-            <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-        </div>
-        <div class="pro">
-            <a href="#">
+            <div class="pro">
+                <a href="#">
+                <img src="images/Sữa hạt dinh dưỡng/12.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Sữa Hạt Đậu Nành Óc Chó 180ML</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>9.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+            <div class="pro">
+                <a href="#">
+                <img src="images/Hạt dinh dưỡng sấy mộc/5.png" alt="">
+                </a>
+                <div class="des">
+                    <h5>Hạt hạnh nhân Nutvigor 500g</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4><span>199.000</span>đ</h4>
+                </div>
+                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
+            </div>
+            <div class="pro">
+                <a href="#">
                 <img src="images/Hạt dinh dưỡng sấy mộc/3.png" alt="">
                 </a>
                 <div class="des">
@@ -203,229 +186,246 @@
                 </div>
                 <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
             </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Ngũ cốc/2.jpg" alt="">
-                </a>
-                <div class="des">
-                    <h5>Ngũ cốc ăn kiêng 500g</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Hạt dinh dưỡng sấy mộc/3.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Hạt macca Nutvigor 500g</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>149.000</span>đ</h4>
                     </div>
-                    <h4><span>249.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Ngũ cốc/3.jpg" alt="">
-                </a>
-                <div class="des">
-                    <h5>Ngũ cốc trẻ em 500g</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Ngũ cốc/2.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Ngũ cốc ăn kiêng 500g</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>249.000</span>đ</h4>
                     </div>
-                    <h4><span>259.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/apple.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Ngũ Cốc Granola Apple 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Ngũ cốc/3.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Ngũ cốc trẻ em 500g</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>259.000</span>đ</h4>
                     </div>
-                    <h4><span>140.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/ym.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Ngũ Cốc Granola 45% Yến Mạch 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/apple.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Ngũ Cốc Granola Apple 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>140.000</span>đ</h4>
                     </div>
-                    <h4><span>250.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/Granola Chocolate.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Ngũ Cốc Granola Matcha 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/ym.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Ngũ Cốc Granola 45% Yến Mạch 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>250.000</span>đ</h4>
                     </div>
-                    <h4><span>120.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/Granola original 2.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Ngũ Cốc Granola Original 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/Granola Chocolate.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Ngũ Cốc Granola Matcha 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>120.000</span>đ</h4>
                     </div>
-                    <h4><span>150.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/Granola siêu hạt.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Granola siêu hạt 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/Granola original 2.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Ngũ Cốc Granola Original 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>150.000</span>đ</h4>
                     </div>
-                    <h4><span>125.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/Hạt điều rang muối vỏ lụa.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Granola điều rang muối vỏ lụa 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/Granola siêu hạt.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Granola siêu hạt 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>125.000</span>đ</h4>
                     </div>
-                    <h4><span>140.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-        <div class="pro">
-            <a href="#">
-                <img src="images/Granola/Mix 5 hạt.png" alt="">
-                </a>
-                <div class="des">
-                    <h5>Granola mix 5 hạt 300G</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/Hạt điều rang muối vỏ lụa.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Granola điều rang muối vỏ lụa 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>140.000</span>đ</h4>
                     </div>
-                    <h4><span>150.000</span>đ</h4>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
                 </div>
-                <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
-            </div>
-</section>
-<section id="pagination" class="section-p1">
-    <a href="product.html"><</a>
-    <a href="product.html" >1</a>
-    <a href="#"class="active">2</a>
-    <a href="#">3</a>
-    <a href="#">></a>
-</section>
-<section id="newsletter">
-    <div class="newstext">
-        <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
-    </div>
-    <div class="form-nlt">
-        <input type="text" placeholder="Địa chỉ Email của bạn">
-        <button class="normal-nlt">Đăng ký</button>
-    </div>
-  </section>
+            <div class="pro">
+                <a href="#">
+                    <img src="images/Granola/Mix 5 hạt.png" alt="">
+                    </a>
+                    <div class="des">
+                        <h5>Granola mix 5 hạt 300G</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><span>150.000</span>đ</h4>
+                    </div>
+                    <i onclick="themvaogio(this)" class="fal fa-shopping-cart cart"></i>
+                </div>
+    </section>
+    <section id="pagination" class="section-p1">
+        <a href="product.html"><</a>
+        <a href="product.html" >1</a>
+        <a href="#"class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">></a>
+    </section>
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
+        </div>
+        <div class="form-nlt">
+            <input type="text" placeholder="Địa chỉ Email của bạn">
+            <button class="normal-nlt">Đăng ký</button>
+        </div>
+    </section>
 
 <!--Footer-->
-<section>
-    <footer class="footer">
-        <div class="col">
-            <img class="logo" src="images/Logo/4.png" alt="logo">
-            <h4>Liên hệ</h4>
-            <P><strong>Địa chỉ :</strong> 12 chùa Bộc, P.Quang Trung, Q.Đống Đa, TP.Hà Nội</P>
-            <P><strong>Điện thoại :</strong> 0985701435</P>
-            <P><strong>Giờ mở cửa:</strong> 9:00 - 21:00 hàng ngày </P>
-            <div class="follow">
-                <h4>Theo dõi chúng tôi</h4>
-                <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-messenger"></i>
-                <i class="fab fa-youtube"></i>
+    <section>
+        <footer class="footer">
+            <div class="col">
+                <img class="logo" src="images/Logo/4.png" alt="logo">
+                <h4>Liên hệ</h4>
+                <P><strong>Địa chỉ :</strong> 12 chùa Bộc, P.Quang Trung, Q.Đống Đa, TP.Hà Nội</P>
+                <P><strong>Điện thoại :</strong> 0985701435</P>
+                <P><strong>Giờ mở cửa:</strong> 9:00 - 21:00 hàng ngày </P>
+                <div class="follow">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-youtube"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <h4>Thông tin chung</h4>
-            <a href="#">Trang chủ</a>
-            <a href="#">Về chúng tôi</a>
-            <a href="#">Sản phẩm</a>
-            <a href="#">Tin Tức</a>
-            <a href="#">Liên hệ</a>
-            <a href="#">Khuyến mãi</a>
-        </div>
-        <div class="col">
-            <h4>Cửa hàng</h4>
-            <a href="#">Ưu đãi thành viên</a>
-            <a href="#">Tài khoản</a>
-            <a href="#">Tuyển dụng</a>
-        </div>
-        <div class="col">
-            <h4>Chính sách</h4>
-            <a href="#">Phương thức vận chuyển</a>
-            <a href="#">Câu hỏi thường gặp</a>
-            <a href="#">Thông tin pháp lý</a>
-            <a href="#">Điền khoản sử dụng</a>
-        </div>
-        <div class="col install">
-            <h4>Cài đặt App</h4>
-            <div class="row">
-                <img src="images/pay/app.jpg" alt="">
-                <img src="images/pay/play.jpg" alt="">
+            <div class="col">
+                <h4>Thông tin chung</h4>
+                <a href="index.html">Trang chủ</a>
+                <a href="aboutus.html">Về chúng tôi</a>
+                <a href="product.html">Sản phẩm</a>
+                <a href="blog.html">Tin Tức</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="#">Khuyến mãi</a>
             </div>
-            <p>Cổng thanh toán bảo mật</p>
-            <img src="images/pay/pay.png" alt="">
-        </div>
-    </footer>
-</section>
+            <div class="col">
+                <h4>Cửa hàng</h4>
+                <a href="#">Ưu đãi thành viên</a>
+                <a href="#">Tài khoản</a>
+                <a href="#">Tuyển dụng</a>
+            </div>
+            <div class="col">
+                <h4>Chính sách</h4>
+                <a href="#">Phương thức vận chuyển</a>
+                <a href="#">Câu hỏi thường gặp</a>
+                <a href="#">Thông tin pháp lý</a>
+                <a href="#">Điền khoản sử dụng</a>
+            </div>
+            <div class="col install">
+                <h4>Cài đặt App</h4>
+                <div class="row">
+                    <img src="images/pay/app.jpg" alt="">
+                    <img src="images/pay/play.jpg" alt="">
+                </div>
+                <p>Cổng thanh toán bảo mật</p>
+                <img src="images/pay/pay.png" alt="">
+            </div>
+        </footer>
+    </section>
 <!--Icon MXh hiển thị-->
     <div class="main">
         <div class="iconn">
