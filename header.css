@@ -223,7 +223,7 @@ ul li{
     align-items: center;
     background-color: #266C0B;
     background-position: 20% 30%;
-    padding: 40px 60px 40px 60px;
+    padding: 40px 100px 40px 100px;
 }
 #newsletter h4{
     font-size: 20px;
@@ -270,7 +270,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 60px;
+    padding: 60px 100px 60px 100px;
     background-color: #f4f4f4;
 }    
 footer .col{
