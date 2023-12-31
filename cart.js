@@ -1,9 +1,7 @@
-
 function showgiohang() {
     var gh = sessionStorage.getItem("giohang");
     var giohang = JSON.parse(gh);
     var ttgh = "";
-
     for (let i = 0; i < giohang.length; i++) {
         thanhTien=(parseInt(giohang[i][2],10)*1);
         ttgh +=
@@ -16,10 +14,8 @@ function showgiohang() {
             '<td class="tongtien">'+thanhTien+'</td>' +
             '</tr>';
     }
-
     document.getElementById("mycart").innerHTML = ttgh;
 }
-
 
 function tinhTongTienDH(){
     var tongtiendh=0;
@@ -32,16 +28,12 @@ function tinhTongTienDH(){
         dongia = parseInt(dongia,10);
         soluong = parseInt(soluong);
 
-
         var thanhTien = (dongia * soluong);
         $(this).find('.tongtien').text(thanhTien);
-
         tongtiendh = tongtiendh + thanhTien;
 
     });
     $("#tong-tien-don-hang").text(tongtiendh);
-
-    
 }
 
 // Tính tổng tiền ban đầu khi trang web được tải
@@ -51,7 +43,6 @@ $(document).ready(function() {
 
 $(document).on('change','.soluong', function() {
     var myTr = $(this).closest('tr');
-    //tinhTongTien(myTr);
     tinhTongTienDH();
 
 })
@@ -60,20 +51,17 @@ $(document).on('click','.xoasp',function(e){
     e.preventDefault();
     var myTr = $(this).closest('tr');
     myTr.remove();
-
     // Sau khi xóa sản phẩm, cập nhật lại tổng tiền
     tinhTongTienDH();
 })
 
 showgiohang();
     $('.normal button').click(function () {
-    // Lấy thông tin giỏ hàng từ sessionStorage
     var gioHangString = sessionStorage.getItem('giohang');
     var gioHang = JSON.parse(gioHangString);
 
     // Lưu thông tin giỏ hàng vào sessionStorage trên trang checkout
     sessionStorage.setItem('giohang_checkout', JSON.stringify(gioHang));
 
-    // Chuyển hướng sang trang checkout
     window.location.href = 'checkout.html';
 });

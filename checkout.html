@@ -18,69 +18,69 @@
     <!-- Header và Navigation -->
     <header class="header">
         <div class="header-1">
-            <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
+            <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
             <form action="product.html" class="search-form" onsubmit="return searchProduct()">
                 <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
                 &emsp; <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-    
+
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
                 <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
-                <a href="cart.html" class="fas fa-shopping-cart giohang">
+                <a href="cart" class="fas fa-shopping-cart">
                     <span id="countsp">0</span>
-                  </a>
+                </a>
                 <div id="login-btn" class="fas fa-user"></div>
                 <div id="mobile" class="fas fa-outdent"></div>
             </div>
         </div>
-    
         <div class="header-2">
             <ul id="navbar">
                 <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="aboutus.html">Về chúng tôi</a></li>
-            <li><a href="product.html">Sản phẩm</a>
-                <ul class="dropdownnav">
-                    <li><a href="#">Hạt dinh dưỡng</a></li>
-                    <li><a href="granola.html">Granola - Hạt mix</a></li>
-                    <li><a href="#">Các loại bánh</a></li>
-                    <li><a href="#">Ngũ cốc</a></li>
-                    <li><a href="#">Sữa hạt</a></li>
-                </ul>
-            </li>
-            <li><a href="blog.html">Tin tức</a></li>
-            <li><a href="lienhe.html">Liên hệ</a></li>
-            <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="aboutus.html">Về chúng tôi</a></li>
+                <li><a href="product.html">Sản phẩm</a>
+                    <ul class="dropdownnav">
+                        <li><a href="#">Hạt dinh dưỡng</a></li>
+                        <li><a href="granola.html">Granola - Hạt mix</a></li>
+                        <li><a href="#">Các loại bánh</a></li>
+                        <li><a href="#">Ngũ cốc</a></li>
+                        <li><a href="#">Sữa hạt</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+            </ul>
         </div>
     </header>
 
     <!-- Main Content -->
     <section id="checkout" class="section-p1">
         <div id="info">
-        <h3>Thông tin đặt hàng</h3>
-        <!-- Bảng hiển thị sản phẩm từ giỏ hàng -->
-        <table id="cart-table">
-            <tbody>
-                <!-- Nội dung sản phẩm sẽ được hiển thị ở đây bằng JavaScript -->
-            </tbody>
+            <h3>Thông tin đặt hàng</h3>
             
-        </table>
-        <h3>Tổng đơn hàng</h3>
-        <table>
-            <tr>
-                <td><strong class="tongtienDH" id="tong-tien-san-pham"></strong></td>
-            </tr>
-            <tr>
-                <td><strong>Phí vận chuyển:</strong></td>
-                <td><strong>30,000 VND</strong></td>
-            </tr>
-            <tr>
-                <td><strong>Tổng cộng:</strong></td>
-                <td><strong class="tongtienDH" id="tong-tien-don-hang"></strong></td>
-            </tr>
-        </table>
-    </div>
-        <!-- Form thông tin người mua -->
+            <table id="cart-table">
+                <tbody>
+                
+                </tbody>
+                
+            </table>
+            <h3>Tổng đơn hàng</h3>
+            <table>
+                <tr>
+                    <td><strong class="tongtienDH" id="tong-tien-san-pham"></strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Phí vận chuyển:</strong></td>
+                    <td><strong>30,000 VND</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Tổng cộng:</strong></td>
+                    <td><strong class="tongtienDH" id="tong-tien-don-hang"></strong></td>
+                </tr>
+            </table>
+        </div>
+
         <div id="customer-info">
             <h3>Thông tin người mua</h3>
             <form id="checkout-form">
@@ -97,6 +97,7 @@
             </form>
         </div>
     </section>
+
     <section id="newsletter">
         <div class="newstext">
             <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
@@ -128,11 +129,11 @@
             </div>
             <div class="col">
                 <h4>Thông tin chung</h4>
-                <a href="#">Trang chủ</a>
-                <a href="#">Về chúng tôi</a>
-                <a href="#">Sản phẩm</a>
-                <a href="#">Tin Tức</a>
-                <a href="#">Liên hệ</a>
+                <a href="index.html">Trang chủ</a>
+                <a href="aboutus.html">Về chúng tôi</a>
+                <a href="product.html">Sản phẩm</a>
+                <a href="blog.html">Tin Tức</a>
+                <a href="lienhe.html">Liên hệ</a>
                 <a href="#">Khuyến mãi</a>
             </div>
             <div class="col">
@@ -160,7 +161,6 @@
         </footer>
     </section>
 
-    <!-- Liên kết với thư viện jQuery và file JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="checkout.js"></script>
     <script src="search.js"></script>
@@ -207,5 +207,5 @@
         };
         }
     </script>
-    </body>
+</body>
 </html>

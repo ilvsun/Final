@@ -15,23 +15,22 @@
     <!--header, navbar menu-->
     <header class="header">
         <div class="header-1">
-            <a href="#" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
-            <form action="" class="search-form">
-                <input type="search" name="" placeholder="Tìm kiếm" id="search=box">
-                &emsp; <label for="search-box" class="fas fa-search"></label>
+            <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
+            <form action="product.html" class="search-form" onsubmit="return searchProduct()">
+                <input type="search" name="search" placeholder="Tìm kiếm" id="search-box">
+                &emsp; <button type="submit"><i class="fas fa-search"></i></button>
             </form>
     
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
                 <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
-                <a href="cart.html" class="fas fa-shopping-cart giohang">
+                <a href="cart" class="fas fa-shopping-cart">
                     <span id="countsp">0</span>
-                  </a>
+                </a>
                 <div id="login-btn" class="fas fa-user"></div>
                 <div id="mobile" class="fas fa-outdent"></div>
             </div>
         </div>
-    
         <div class="header-2">
             <ul id="navbar">
                 <li><a href="index.html">Trang chủ</a></li>
@@ -47,52 +46,50 @@
                 </li>
                 <li><a href="blog.html">Tin tức</a></li>
                 <li><a href="lienhe.html">Liên hệ</a></li>
-                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+              </ul>
         </div>
     </header>
+    
+    <section id="cart" class="section-p1">
+        <table width="100%" id="cart-table">
+            <thead>
+                <tr>
+                    <td>Xóa</td>
+                    <td>Ảnh</td>
+                    <td>Thông tin sản phẩm</td>
+                    <td>Đơn giá</td>
+                    <td>Số lượng</td>
+                    <td>Thành tiền</td>
+                </tr>
+            </thead>
+            <tbody id="mycart">
 
-<section id="cart" class="section-p1">
-    <table width="100%" id="cart-table">
-        <thead>
-            <tr>
-                <td>Xóa</td>
-                <td>Ảnh</td>
-                <td>Thông tin sản phẩm</td>
-                <td>Đơn giá</td>
-                <td>Số lượng</td>
-                <td>Thành tiền</td>
-            </tr>
-        </thead>
-        <tbody id="mycart">
-
-        </tbody>
-    </table>
-</section>
-<section>
-    <div id="subtotal">
-        <table>
-            <tr>
-                <td><strong>Tổng tiền:</strong></td>
-                <td><strong class="tongtienDH" id="tong-tien-don-hang"></strong></td>
-            </tr>
-         </table>
-         <!--<button class="normal">Thanh toán</button>-->
-         <a href="#" class="normal">
-            <button class="normal">Thanh toán</button>
-        </a>
-    </div>
-</section>
-<section id="newsletter">
-    <div class="newstext">
-        <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
-    </div>
-    <div class="form-nlt">
-        <input type="text" placeholder="Địa chỉ Email của bạn">
-        <button class="normal-nlt">Đăng ký</button>
-    </div>
-  </section>
-
-
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <div id="subtotal">
+            <table>
+                <tr>
+                    <td><strong>Tổng tiền:</strong></td>
+                    <td><strong class="tongtienDH" id="tong-tien-don-hang"></strong></td>
+                </tr>
+            </table>
+            <a href="#" class="normal">
+                <button class="normal">Thanh toán</button>
+            </a>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
+        </div>
+        <div class="form-nlt">
+            <input type="text" placeholder="Địa chỉ Email của bạn">
+            <button class="normal-nlt">Đăng ký</button>
+        </div>
+    </section>
     <!--Footer-->
     <section>
         <footer class="footer">
@@ -114,11 +111,11 @@
             </div>
             <div class="col">
                 <h4>Thông tin chung</h4>
-                <a href="#">Trang chủ</a>
-                <a href="#">Về chúng tôi</a>
-                <a href="#">Sản phẩm</a>
-                <a href="#">Tin Tức</a>
-                <a href="#">Liên hệ</a>
+                <a href="index.html">Trang chủ</a>
+                <a href="aboutus.html">Về chúng tôi</a>
+                <a href="product.html">Sản phẩm</a>
+                <a href="blog.html">Tin Tức</a>
+                <a href="lienhe.html">Liên hệ</a>
                 <a href="#">Khuyến mãi</a>
             </div>
             <div class="col">
@@ -144,24 +141,24 @@
                 <img src="images/pay/pay.png" alt="">
             </div>
         </footer>
-    </section>
+    </section>  
+    
     <!--Icon MXh hiển thị-->
-        <div class="main">
-            <div class="iconn">
-                <a href="#"><i class="fab fa-facebook-f "></i></a>
-            </div>
-            <div class="iconn">
-                <a href="#"><i class="fab fa-facebook-messenger "></i></a>
-            </div>
-            <div class="iconn">
-                <a href="#"><i class="fab fa-instagram "></i></i></a>
-            </div>
-            <div class="iconn">
-                <a href="#"><i class="fab fa-youtube "></i></a>
-            </div>
+    <div class="main">
+        <div class="iconn">
+            <a href="#"><i class="fab fa-facebook-f "></i></a>
         </div>
-    
-    
+        <div class="iconn">
+            <a href="#"><i class="fab fa-facebook-messenger "></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-instagram "></i></i></a>
+        </div>
+        <div class="iconn">
+            <a href="#"><i class="fab fa-youtube "></i></a>
+        </div>
+    </div>
+     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -178,5 +175,4 @@
     showgiohang();
     </script>
 </body>
-
 </html>
