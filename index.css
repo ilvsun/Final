@@ -563,20 +563,20 @@ body {
 
 .chatpopup .chat-btn{
     position: fixed;
-    right:100px;
+    right:75px;
     bottom: 50px;
-    background: #6AC943;
+    margin-bottom: -13.5px;
+    background: #266C0B;
     color: white;
     width:50px;
     height: 50px;
     border-radius: 50%;
-    opacity: 0.9;
     transition: opacity 0.3s;
-    z-index: 2;
+    z-index: 1000;
 }
 
 .chatpopup .chat-btn:hover{
-    background-color: #266C0B;
+    background-color: #6AC943;
 }
 
 .chatpopup .chat-btn i{
@@ -1002,6 +1002,16 @@ input[type="text"]{
     .testimonials__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+    .chatpopup .chat-btn{
+        width: 30px;
+        height: 30px;
+        margin-bottom: -12px;
+        right:55px;
+
+    }
+    .chatpopup .chat-btn i{
+        font-size: 20px;
     }
 }
 
