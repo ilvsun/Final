@@ -110,7 +110,28 @@ function themvaoyeuthich(x) {
 }
 /*----------------Thông báo thêm SP vào trang DS SP yêu thích--------------*/
 
+/*----------------Đồng hồ đếm ngược-----------------------*/
 
+var daysCount = new Date("Jan 05, 2024 00:00:00").getTime();
+
+var count = setInterval(function() {
+  var now = new Date().getTime();
+  var time = daysCount - now;
+  
+  var days = Math.floor(time / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+  document.getElementById("Time-dis-play").innerHTML = days + " " + hours + " " + minutes + " " + seconds + " ";
+
+  if (time < 0) {
+    clearInterval(count);
+    document.getElementById("Time-dis-play").innerHTML = "Đã kết thúc Flash Deals";
+  }
+}, 1000);
+
+/*----------------Đồng hồ đếm ngược-----------------------*/
 
 /*----------------Thông báo khi khách hàng nhập email-----------------------*/
 document.addEventListener("DOMContentLoaded", function() {
