@@ -7,7 +7,7 @@
     <title>Liên hệ</title>
     <script src="https://kit.fontawesome.com/834bf82ba3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="hf.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="lienhe.css">
     <link rel="icon" type="image/x-icon" href="images/Logo/3.png">
 </head>
@@ -174,15 +174,11 @@
     function validateForm() {
         var email = document.getElementById('email').value;
         var phone = document.getElementById('phone').value;
-
-        // Kiểm tra định dạng email
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Vui lòng nhập một địa chỉ email hợp lệ.');
             return;
         }
-
-        // Kiểm tra định dạng số điện thoại (chỉ chấp nhận số và dấu +)
         var phoneRegex = /^[0-9+]+$/;
             if (!phoneRegex.test(phone) || phone.length !== 10) {
                 alert('Vui lòng nhập một số điện thoại hợp lệ (10 chữ số).');
