@@ -109,16 +109,16 @@ function openCity(evt, cityName) {
     }, 1000);
  }
 
-/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+/*-----------------Thông báo sản phẩm thêm vào giỏ hàng------------------*/
  function themgio() {
     alert("Đã thêm vào giỏ hàng thành công!");
  }
-/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+/*-----------------Thông báo sản phẩm thêm vào giỏ hàng------------------*/
 
-/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+/*-----------------Thông báo sản phẩm thêm vào danh sách yêu thích------------------*/
 function themyeuthich() {
     alert("Đã thêm vào danh sách yêu thích thành công!");
  }
-/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+/*-----------------Thông báo sản phẩm thêm vào danh sách yêu thích------------------*/
  
  
