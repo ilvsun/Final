@@ -108,5 +108,17 @@ function openCity(evt, cityName) {
        document.getElementById("cartAnimation").style.display = "none";
     }, 1000);
  }
+
+/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+ function themgio() {
+    alert("Đã thêm vào giỏ hàng thành công!");
+ }
+/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+
+/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
+function themyeuthich() {
+    alert("Đã thêm vào danh sách yêu thích thành công!");
+ }
+/*-----------------Thêm sản phẩm vào giỏ hàng------------------*/
  
  
