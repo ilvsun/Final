@@ -965,6 +965,9 @@ input[type="text"]{
         bottom:50px;
         right:90px;
     }
+    #popup img{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -1002,7 +1005,6 @@ input[type="text"]{
 }
 
 /*----------------Responsive--------------*/
-
 
 
 
