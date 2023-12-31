@@ -1,5 +1,3 @@
-/*Header*/
-
 searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = ()=>{
@@ -30,22 +28,13 @@ let isNavActive = false;
 mobile.addEventListener('click', () => {
     if (!isNavActive) {
         nav.classList.add('active');
-        isNavActive = true; // trạng thái là hiển thị nav
+        isNavActive = true; 
     } else {
         nav.classList.remove('active');
-        isNavActive = false; // trạng thái là ẩn nav
+        isNavActive = false; 
     }
 });
 
-// Truy cập  trang đăng nhập
-document.addEventListener("DOMContentLoaded", function() {
-  const loginBtn = document.getElementById("login-btn");
-  // Thêm sự kiện click cho icon
-  loginBtn.addEventListener("click", function() {
-      // Chuyển hướng sang trang login.html khi icon được nhấp
-      window.location.href = "login.html";
-  });
-});
 
 /*log in - Ẩn và hiển thị mật khẩu*/
 const forms= document.querySelector(".container-forms"),
@@ -66,6 +55,13 @@ pwShowHide.forEach(eyeIcon => {
   });
 });
 
+// Truy cập  trang đăng nhập
+document.addEventListener("DOMContentLoaded", function() {
+  const loginBtn = document.getElementById("login-btn");
+  loginBtn.addEventListener("click", function() {
+      window.location.href = "login.html";
+  });
+});
 
 
 // Lấy tham chiếu đến form và các trường input
@@ -75,13 +71,11 @@ const passwordInput = document.querySelector('.password');
 
 // Xử lý sự kiện khi form được gửi đi
 loginForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Ngăn chặn hành động mặc định của form
+  event.preventDefault(); 
 
-// Lấy giá trị từ các trường input
   const emailValue = emailInput.value.trim();
   const passwordValue = passwordInput.value;
 
-// Kiểm tra tính hợp lệ của email và mật khẩu
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (emailValue === '' || passwordValue === '') {
     alert('Vui lòng điền đủ thông tin đăng nhập trước khi gửi.');
@@ -90,9 +84,8 @@ loginForm.addEventListener('submit', function(event) {
     alert('Email không hợp lệ. Vui lòng nhập địa chỉ email đúng.');
     return;
   } else {
-    // Gửi thông tin đăng nhập đến server hoặc xử lý theo nhu cầu của bạn
     alert('Thông tin đăng nhập đã chính xác');
-    window.location.href = 'index.html'; // Chuyển hướng người dùng đến trang chủ
+    window.location.href = 'index.html'; 
   }
 });
 

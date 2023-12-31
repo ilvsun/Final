@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--header, navbar menu-->
-<header class="header">
+  <header class="header">
     <div class="header-1">
         <a href="index.html" class="logo"><img src="images/Logo/4.png" alt="lg"></a>
         <form action="product.html" class="search-form" onsubmit="return searchProduct()">
@@ -24,7 +24,7 @@
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
             <a href="sanphamyeuthich.html" class="fas fa-heart"></a>
-            <a href="cart.html" class="fas fa-shopping-cart">
+            <a href="cart" class="fas fa-shopping-cart">
                 <span id="countsp">0</span>
             </a>
             <div id="login-btn" class="fas fa-user"></div>
@@ -37,127 +37,128 @@
             <li><a href="aboutus.html">Về chúng tôi</a></li>
             <li><a href="product.html">Sản phẩm</a>
                 <ul class="dropdownnav">
-                    <li><a href="granola.html">Hạt dinh dưỡng</a></li>
+                    <li><a href="#">Hạt dinh dưỡng</a></li>
                     <li><a href="granola.html">Granola - Hạt mix</a></li>
-                    <li><a href="granola.html">Các loại bánh</a></li>
-                    <li><a href="granola.html">Ngũ cốc</a></li>
-                    <li><a href="granola.html">Sữa hạt</a></li>
+                    <li><a href="#">Các loại bánh</a></li>
+                    <li><a href="#">Ngũ cốc</a></li>
+                    <li><a href="#">Sữa hạt</a></li>
                 </ul>
             </li>
             <li><a href="blog.html">Tin tức</a></li>
             <li><a href="lienhe.html">Liên hệ</a></li>
-            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+        </ul>
     </div>
-</header>
+  </header>
 
 <!--Đăng nhập--> 
-<section class="container-forms">
-  <div class ="form-login">
-    <div class ="form-content">
-      <h2 id="dangnhap">Đăng nhập</h2>
-      <form action="#" id="flogin">
-        <div class="field input-field">
-          <input type="email" placeholder="Email" class="input">
-        </div>
+  <section class="container-forms">
+    <div class ="form-login">
+      <div class ="form-content">
+        <h2 id="dangnhap">Đăng nhập</h2>
+        <form action="#" id="flogin">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
 
-        <div class="field input-field">
-          <input type="password" placeholder="Mật khẩu" class="password">
-          <i class="fa-regular fa-eye-slash eye-icon"></i>
-        </div>
-        
-        <div class="form-link">
-          <a href="#" class="forgot-pass">Quên mật khẩu?</a>
-        </div>
+          <div class="field input-field">
+            <input type="password" placeholder="Mật khẩu" class="password">
+            <i class="fa-regular fa-eye-slash eye-icon"></i>
+          </div>
+          
+          <div class="form-link">
+            <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+          </div>
 
-        <div class="field button-field">
-          <button>Đăng nhập</button>
-        </div>
+          <div class="field button-field">
+            <button>Đăng nhập</button>
+          </div>
 
-        <div class="form-link">
-          <span>Đăng ký tài khoản tại đây <a href="signup.html" class="link signup-link">Đăng ký</a></span>
-        </div>
-      </form>
+          <div class="form-link">
+            <span>Đăng ký tài khoản tại đây <a href="signup.html" class="link signup-link">Đăng ký</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="line"></div>
+      <div class="media-options">
+        <a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=840539422652232&params%5Bdisplay%5D=%22popup%22&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22fd788c27-eb11-4cac-9880-27e38afe9fe4%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fsocialloginplus-apps.haravan.com%5C%2Fsocialloginplus%5C%2Fapi%5C%2Fzauth%5C%2Ffacebook%5C%2Fcallback%22&params%5Bresponse_type%5D=%22code%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%2215BhRNjkvZYRfL6juLxDK1igo1CEEegV%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3Alogin_platformization_read%22&source=gdp_delegated" class="field-facebook">
+          <i class="fa-brands fa-facebook fb-icon"></i>
+          &ensp; <span>Đăng nhập với Facebook</span>
+        </a>
+      </div>
+      <br>
+      <div class="media-options">
+        <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=profile%20openid%20email&state=15BhRNjkvZYRfL6juLxDK1igo1CEEegV&response_type=code&client_id=3371183033-dcda1sl1an7h46p6qapglonr245r8ccl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsocialloginplus-apps.haravan.com%2Fsocialloginplus%2Fapi%2Fzauth%2Fgoogle%2Fcallback&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow" class="field-google">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="gg" class="google-img">
+          &ensp;<span>Đăng nhập với Google</span>
+        </a>
+      </div>
     </div>
-
-    <div class="line"></div>
-    <div class="media-options">
-      <a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=840539422652232&params%5Bdisplay%5D=%22popup%22&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22fd788c27-eb11-4cac-9880-27e38afe9fe4%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fsocialloginplus-apps.haravan.com%5C%2Fsocialloginplus%5C%2Fapi%5C%2Fzauth%5C%2Ffacebook%5C%2Fcallback%22&params%5Bresponse_type%5D=%22code%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%2215BhRNjkvZYRfL6juLxDK1igo1CEEegV%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3Alogin_platformization_read%22&source=gdp_delegated" class="field-facebook">
-        <i class="fa-brands fa-facebook fb-icon"></i>
-        &ensp; <span>Đăng nhập với Facebook</span>
-      </a>
-    </div>
-    <br>
-    <div class="media-options">
-      <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=profile%20openid%20email&state=15BhRNjkvZYRfL6juLxDK1igo1CEEegV&response_type=code&client_id=3371183033-dcda1sl1an7h46p6qapglonr245r8ccl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsocialloginplus-apps.haravan.com%2Fsocialloginplus%2Fapi%2Fzauth%2Fgoogle%2Fcallback&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow" class="field-google">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="gg" class="google-img">
-        &ensp;<span>Đăng nhập với Google</span>
-      </a>
-    </div>
-  </div>
-</section>
+  </section>
 
 <!--Email-->
-<section id="newsletter">
-  <div class="newstext">
-      <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
-  </div>
-  <div class="form-nlt">
-      <input type="text" placeholder="Địa chỉ Email của bạn">
-      <button class="normal-nlt">Đăng ký</button>
-  </div>
-</section>
+  <section id="newsletter">
+    <div class="newstext">
+        <h4>NHẬN THÔNG TIN CÁC CHƯƠNG TRÌNH CỦA CHÚNG TÔI</h4>
+    </div>
+    <div class="form-nlt">
+        <input type="text" placeholder="Địa chỉ Email của bạn">
+        <button class="normal-nlt">Đăng ký</button>
+    </div>
+  </section>
 <!--Footer-->
-<section>
-  <footer class="footer">
-      <div class="col">
-          <img class="logo" src="images/Logo/4.png" alt="logo">
-          <h4>Liên hệ</h4>
-          <P><strong>Địa chỉ :</strong> 12 chùa Bộc, P.Quang Trung, Q.Đống Đa, TP.Hà Nội</P>
-          <P><strong>Điện thoại :</strong> 0985701435</P>
-          <P><strong>Giờ mở cửa:</strong> 9:00 - 21:00 hàng ngày </P>
-          <div class="follow">
-              <h4>Theo dõi chúng tôi</h4>
-              <div class="icon">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-facebook-messenger"></i>
-              <i class="fab fa-youtube"></i>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-          <h4>Thông tin chung</h4>
-          <a href="index.html">Trang chủ</a>
-          <a href="about.html">Về chúng tôi</a>
-          <a href="product.html">Sản phẩm</a>
-          <a href="product.html">Tin Tức</a>
-          <a href="lienhe.html">Liên hệ</a>
-          <a href="#">Khuyến mãi</a>
-      </div>
-      <div class="col">
-          <h4>Cửa hàng</h4>
-          <a href="#">Ưu đãi thành viên</a>
-          <a href="#">Tài khoản</a>
-          <a href="#">Tuyển dụng</a>
-      </div>
-      <div class="col">
-          <h4>Chính sách</h4>
-          <a href="#">Phương thức vận chuyển</a>
-          <a href="#">Câu hỏi thường gặp</a>
-          <a href="#">Thông tin pháp lý</a>
-          <a href="#">Điền khoản sử dụng</a>
-      </div>
-      <div class="col install">
-          <h4>Cài đặt App</h4>
-          <div class="row">
-              <img src="images/pay/app.jpg" alt="">
-              <img src="images/pay/play.jpg" alt="">
-          </div>
-          <p>Cổng thanh toán bảo mật</p>
-          <img src="images/pay/pay.png" alt="">
-      </div>
-  </footer>
-</section>
+  <section>
+    <footer class="footer">
+        <div class="col">
+            <img class="logo" src="images/Logo/4.png" alt="logo">
+            <h4>Liên hệ</h4>
+            <P><strong>Địa chỉ :</strong> 12 chùa Bộc, P.Quang Trung, Q.Đống Đa, TP.Hà Nội</P>
+            <P><strong>Điện thoại :</strong> 0985701435</P>
+            <P><strong>Giờ mở cửa:</strong> 9:00 - 21:00 hàng ngày </P>
+            <div class="follow">
+                <h4>Theo dõi chúng tôi</h4>
+                <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Thông tin chung</h4>
+            <a href="index.html">Trang chủ</a>
+            <a href="aboutus.html">Về chúng tôi</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="blog.html">Tin Tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+            <a href="#">Khuyến mãi</a>
+        </div>
+        <div class="col">
+            <h4>Cửa hàng</h4>
+            <a href="#">Ưu đãi thành viên</a>
+            <a href="#">Tài khoản</a>
+            <a href="#">Tuyển dụng</a>
+        </div>
+        <div class="col">
+            <h4>Chính sách</h4>
+            <a href="#">Phương thức vận chuyển</a>
+            <a href="#">Câu hỏi thường gặp</a>
+            <a href="#">Thông tin pháp lý</a>
+            <a href="#">Điền khoản sử dụng</a>
+        </div>
+        <div class="col install">
+            <h4>Cài đặt App</h4>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Cổng thanh toán bảo mật</p>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+    </footer>
+  </section>
 <!--Icon MXh hiển thị-->
   <div class="main">
       <div class="iconn">
