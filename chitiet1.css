@@ -24,6 +24,13 @@ h2{
 
 }
 
+.add-cart{
+    cursor: pointer;
+}
+.favourite{
+    cursor: pointer;
+}
+
 h4{
     font-size: 20px;
     color: #6AC943;
