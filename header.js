@@ -1,6 +1,4 @@
-
 searchForm = document.querySelector('.search-form');
-
 document.querySelector('#search-btn').onclick = ()=>{
     searchForm.classList.toggle('active');
 }
@@ -29,19 +27,17 @@ let isNavActive = false;
 mobile.addEventListener('click', () => {
     if (!isNavActive) {
         nav.classList.add('active');
-        isNavActive = true; // trạng thái là hiển thị nav
+        isNavActive = true; 
     } else {
         nav.classList.remove('active');
-        isNavActive = false; // trạng thái là ẩn nav
+        isNavActive = false; 
     }
 });
 
 // Truy cập  trang đăng nhập
 document.addEventListener("DOMContentLoaded", function() {
     const loginBtn = document.getElementById("login-btn");
-    // Thêm sự kiện click cho icon
     loginBtn.addEventListener("click", function() {
-        // Chuyển hướng sang trang login.html khi icon được nhấp
         window.location.href = "login.html";
     });
 });

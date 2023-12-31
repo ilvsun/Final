@@ -170,14 +170,13 @@ ul li{
 }
 
 /* Style cho dropdown */
-/* Style cho dropdown */
 .dropdownnav {
     width: 220px;
-    display: none; /* Ẩn dropdown mặc định */
-    position: absolute; /* Vị trí tuyệt đối */
-    top: 100%; /* Hiển thị dropdown từ phía dưới của mục cha */
+    display: none; 
+    position: absolute; 
+    top: 100%; 
     left: 0;
-    background-color: #fff; /* Màu nền dropdown */
+    background-color: #fff; 
     min-width: 120px; 
     line-height: 2.5;
 }
@@ -190,7 +189,7 @@ ul li{
 }
 
 .dropdownnav li:hover {
-    border-bottom: 2px solid #333; /* Đổi màu đường viền khi hover */
+    border-bottom: 2px solid #333; 
 }
 
 #navbar li:hover .dropdownnav {
@@ -263,7 +262,6 @@ ul li{
 #newsletter .normal-nlt:hover{
     background-color: #302C2C;
 }
-
 
 /*Footer*/
 footer{
@@ -370,27 +368,16 @@ z-index: 1000;
   color: rgb(234, 19, 19);
 }
 
-/* Animation cho icon mạng xã hội */
 .iconn {
     transition: transform 0.2s ease-in-out;
   }
   .iconn:hover {
     transform: scale(1.2);
   }
-/* Responsive icon*/
-@media (max-width: 900px) {
-    .iconn {
-      /* Các điều chỉnh kích thước cho màn hình <= 900px */
-      width: 40px;
-      height: 40px;
-      font-size: 24px;
-      line-height: 40px;
-    }
-  }
+
   
   @media (max-width: 768px) {
     .iconn {
-      /* Các điều chỉnh kích thước cho màn hình <= 768px */
       width: 30px;
       height: 30px;
       font-size: 18px;
@@ -398,16 +385,7 @@ z-index: 1000;
     }
   }
   
-  @media (max-width: 477px) {
-    .iconn {
-      /* Các điều chỉnh kích thước cho màn hình <= 477px */
-      width: 25px;
-      height: 25px;
-      font-size: 14px;
-      line-height: 25px;
-    }
-  }
-  
+
   
 
 @media (max-width:799px){
@@ -505,6 +483,12 @@ z-index: 1000;
     #newsletter{
         font-size: 50%;
     }
+    .iconn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+      }
 }
 
 @media (max-width: 450px){
@@ -521,6 +505,7 @@ z-index: 1000;
     #newsletter{
         font-size: 50%;
     }
+    
 }
 @media (max-width: 477px){
     .header .header-1 img{
@@ -535,4 +520,10 @@ z-index: 1000;
     #newsletter{
         font-size: 50%;
     }
+    .iconn {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        line-height: 25px;
+      }
   }
