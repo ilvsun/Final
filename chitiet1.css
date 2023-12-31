@@ -24,13 +24,6 @@ h2{
 
 }
 
-.add-cart{
-    cursor: pointer;
-}
-.favourite{
-    cursor: pointer;
-}
-
 h4{
     font-size: 20px;
     color: #6AC943;
@@ -57,101 +50,7 @@ body {
     width: 100%;
 }
 
-@media (max-width:799px){
-    #prodetails{
-        display: flex;
-        flex-direction: column;
-    }
-    #prodetails .single-pro-img{
-        width: 100%;
-        margin-right: 0px;
-    }
-    #prodetails .single-pro-details{
-        width: 100%;
-    }
-}
-
-@media (max-width: 900px){
-    html{
-        font-size: 55%;
-    }
-    .header .header-1{
-        padding: 2rem;
-    }
-    #newsletter .form-nlt{
-      padding-top: 20px;
-      width: 80%;
-  }
-    #newsletter{
-      font-size: 50%;
-  }
-    #prodetails{
-        display: flex;
-        flex-direction: column;
-    }
-    #prodetails .single-pro-img{
-        width: 100%;
-        margin-right: 0px;
-    }
-    #prodetails .single-pro-details{
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px){
-
-    #prodetails{
-        display: flex;
-        flex-direction: column;
-    }
-    #prodetails .single-pro-img{
-        width: 100%;
-        margin-right: 0px;
-    }
-    #prodetails .single-pro-details{
-        width: 100%;
-    }
-    #product1 .pro-container{
-        display: block;
-    }
-}
-@media (max-width: 450px){
-    #prodetails{
-        display: flex;
-        flex-direction: column;
-    }
-    #prodetails .single-pro-img{
-        width: 100%;
-        margin-right: 0px;
-    }
-    #prodetails .single-pro-details{
-        width: 100%;
-    }
-     #prodetails .single-pro-details h2{
-         font-size: 20px; }
-    #prodetails .single-pro-details h3 {
-    font-size: 20px;
-}
-    .favourite-item{
-    display: block;
-    background-color: #6AC943;
-    width: 100px;
-    height: 7.5%;
-    margin-top: 20px;
-    border-radius: 7px;
-    }
-    .add-to-cart{
-        display: block;
-    background-color: #6AC943;
-    width: 200px;
-    height: 70px;
-    margin-top: 20px;
-    border-radius: 7px;
-    }
-    #product1 .pro-container{
-        display: block;
-    }
-
+/*-----------------------------Thông tin sản phẩm---------------------------*/
 #prodetails {
     display: flex;
     margin-top: 20px;
@@ -277,6 +176,13 @@ body {
     width: 150px;
 }
 
+.add-cart{
+    cursor: pointer;
+}
+.favourite{
+    cursor: pointer;
+}
+
 .favourite:hover {
     background-color: #e13f4d;
     color: #ffffff;
@@ -310,8 +216,9 @@ body {
     border-style: solid;
     border-color: transparent rgb(242, 236, 73) transparent rgb(242, 236, 73);
 }
+/*-----------------------------Thông tin sản phẩm---------------------------*/
  
-/*mô tả sản phẩm*/
+/*------------------------------Mô tả sản phẩm---------------------------*/
 .tab {
     display: flex;
     position: relative;
@@ -353,12 +260,10 @@ body {
     margin-left: auto;
     background-color: #9ade7f;
   }
+/*------------------------------Mô tả sản phẩm---------------------------*/
 
 
-
-
-
-/*đánh giá sản phẩm*/
+/*------------------------------Đánh giá sản phẩm---------------------------*/
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
@@ -418,3 +323,69 @@ body {
   .cancel:hover {
     background-color: #c82333;
   }
+/*------------------------------Đánh giá sản phẩm---------------------------*/
+
+
+/*------------------------------Responsive---------------------------*/
+  @media (max-width:799px){
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+    #product1 .pro-container{
+        display: block;
+    }
+}
+@media (max-width: 450px){
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+    #product1 .pro-container{
+        display: block;
+    }
+    
+}
+/*------------------------------Responsive---------------------------*/
