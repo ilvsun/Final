@@ -19,7 +19,7 @@ $(document).ready(function() {
             window.location.href = 'index.html';
         } else {
             // Hiển thị thông báo yêu cầu điền đầy đủ thông tin
-            alert("Vui lòng điền đầy đủ thông tin.");
+            alert("Bạn đã đặt hàng thành công!");
         }
     });
 });
