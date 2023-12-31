@@ -1,74 +1,175 @@
-
-/*Blog*/
-#blog{
-    padding: 100px 150px 0 150px;
-}
-#blog .blog-box{
-    display: flex;
-    align-items: center;
-    width: 100%;
+.post-slider{
     position: relative;
-    padding-bottom: 90px;
 }
-#blog .blog-img{
-    width: 50%;
-    margin-right: 40px;
+.post-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+    color: #1b4d08;
 }
-#blog img{
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post{
+    background-color: #fff;
+    display: inline-block;
+    height: 330px;
+    width: 300px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    box-shadow: 1em 1em 1em -1em #a0a0a033;
+}
+
+.post-slider .post-wrapper .post h4{
+    margin: 10px 5px;
+    font-size: 18px;
+}
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;
+}
+.post-slider .post-wrapper .post i{
+    font-size: 13px;
+}
+.post-slider .post-wrapper .post .slider-image {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
-#blog .blog-details{
-    width: 50%;
-}
-#blog .blog-details a{
-    text-decoration: none;
-    font-size: 15px ;
-    color: #000;
-    font-weight: 700;
-}
-#blog .blog-details a:hover{
-    color: #6AC943;
-}
-#blog .blog-box h1{
+.post-slider .next {
     position: absolute;
-    top: -40px;
-    left: 0;
-    font-size: 60px;
-    font-weight: 700;
-    color: #acc8a1;
-    z-index: -9;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #266C0B;
+    cursor: pointer;
+}
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #266C0B;
+    cursor: pointer;
+}
+a{
+    color: #000;
+}
+ a:hover{
+    color: #266C0B
+}
+.post-slider button{
+    display: none;
 }
 
-@media (max-width: 768px) {
-    #blog .blog-box{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    #blog{
-        padding: 100px 20px 0 20px;
-    }
-    #blog .blog-img{
-        width: 100%;
-        margin-right: 0px;
-        margin-bottom: 30px;
-    }
-    #blog .blog-details{
-        width: 100%;
-    }
-      
-    
-      
+/*content*/
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+    display: flex;
 }
-@media (max-width: 477px) {
-    #blog .blog-box{
-        flex-direction: column;
-        align-items: flex-start;
+.content .main-content {
+    width: 70%;
     }
-      
+.content .main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: #e4f1df;
+    position: relative;
+}
+.content .main-content .post .read-more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #e4f1df;
+    border: 1px solid #1b4d08;
+    color: #266C0B;
+}
+.content .main-content .post .read-more:hover{
+    background-color: #1b4d08;
+    transition: .25s;
+}
+.content .main-content h3{
+    font-size: 25px;
+}
+.content .main-content .post .post-image {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.content .main-content .post .post-preview{
+    padding: 10px;
+    width: 50%;
+    float: right;
+}
+.content .main-content .recent-post-title{
+    margin: 20px;
+    color: #1b4d08;
+}
+.content .sibebar {
+    width: 30%;
+    height: 300px;
+}
+.clearfix::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.btn{
+    padding: .5rem 1rem;
+    background:#266C0B;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }
 
+.btn:hover{
+    background:#1b4d08;
+    color: white !important;
+}
+
+
+
+.content .sibebar .topic {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 105px;
+}
+
+.content .sibebar .topic ul li{
+    display:block;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3;
+}
+.content .sibebar .topic-title{
+    padding: 0px 0 15px 0;
+}
+.content .sibebar .topic{
+    border-top: 1px solid #e0e0e0;
+}
+.content .sibebar .topic ul li:hover{
+    padding-left: 10px;
+    transition: all 0.3;
+}
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column; 
+    }
+    .content .sibebar{
+        width: 100%;
+        height: auto;
+    }
+    .content .main-content{
+        width: 100%;
+    }
+}
 
 
