@@ -162,10 +162,10 @@ setTimeout(function() {
   document.getElementById('popup').style.display = 'block';
   document.getElementById('overlay').style.display = 'block';
   
-  // Đóng popup sau 10 giây
+  // Đóng popup sau 5 giây
   setTimeout(function() {
       closePopup();
-  }, 10000);
+  }, 5000);
 }, 1000);
 
 // Hàm đóng popup
